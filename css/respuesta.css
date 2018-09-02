@@ -1,0 +1,244 @@
+@font-face {
+    font-family: 'Gotham-Book';
+    src: url('../fonts/Gotham-Book.eot');
+    src: url('../fonts/Gotham-Book.woff2') format('woff2'), url('../fonts/Gotham-Book.woff') format('woff'), url('../fonts/Gotham-Book.ttf') format('truetype'), url('../fonts/Gotham-Book.svg#fonts/Gotham-Book') format('svg'), url('../fonts/Gotham-Book.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Medium';
+    src: url('../fonts/Gotham-Medium.eot');
+    src: url('../fonts/Gotham-Medium.woff2') format('woff2'), url('../fonts/Gotham-Medium.woff') format('woff'), url('../fonts/Gotham-Medium.ttf') format('truetype'), url('../fonts/Gotham-Medium.svg#fonts/Gotham-Medium') format('svg'), url('../fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Bold';
+    src: url('../fonts/Gotham-Bold.eot');
+    src: url('../fonts/Gotham-Bold.woff2') format('woff2'), url('../fonts/Gotham-Bold.woff') format('woff'), url('../fonts/Gotham-Bold.ttf') format('truetype'), url('../fonts/Gotham-Bold.svg#fonts/Gotham-Bold') format('svg'), url('../fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+* {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#respuesta {
+    align-items: center;
+    -webkit-align-items: center;
+    background-image: url("../img/response/marco_1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    background-color: #333333;
+    /*	border: solid black;*/
+    display: flex;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    height: 100%;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
+#respuesta .contenedor_general {
+    /*    border: solid red;*/
+    width: 80%;
+    max-width: 700px;
+}
+
+#respuesta .contenedor_general .informacion {
+    /*border: solid black;*/
+    margin-top: 3%;
+    margin-bottom: 2%;
+    color: #cecece;
+    font-family: 'Gotham-Book', sans-serif;
+}
+
+div.informacion p.bold {
+    font-family: 'Gotham-Bold', sans-serif;
+}
+
+div.informacion p.regular {
+    font-size: 15px;
+}
+
+div.informacion_empresarial, .informacion_estado {
+    align-items: center;
+    display: flex;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    margin-left: 2%;
+}
+
+div.informacion_empresarial {
+    margin-bottom: 3%;
+}
+
+div.informacion_empresarial p {
+    font-size: 15px;
+    width: 50%;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS styles go here */
+    div.informacion, .volver {
+        margin-left: 8%;
+    }
+
+    ; }
+
+; div.informacion_empresarial p span {
+    color: #ff6300;
+    font-family: 'Gotham-Bold', sans-serif;
+    font-size: 16px;
+}
+
+div.informacion_empresarial p:before {
+    content: "âšŠ";
+    color: #0b4d5e;
+    font-family: 'Gotham-Bold', sans-serif;
+    top: -15px;
+    left: -2px;
+    position: absolute;
+}
+
+div.informacion_empresarial hr {
+    border-top: solid 2px #0b4d5e !important;
+    left: 55%;
+    top : 52px;
+    position: absolute;
+    width: 8px !important;
+}
+
+div.bienvenida {
+    display: none;
+    margin-bottom: 25px;
+    margin-left: 2%;
+    margin-top: 60px;
+    font-family: 'Gotham-Bold', sans-serif;
+    font-size: 21px;
+    color: #f0ebe9;
+}
+
+div.informacion_estado {
+    align-items: baseline;
+    -webkit-align-items: baseline;
+    position: relative;
+}
+
+div.informacion_estado .estado p.bold {
+    color: #ff6300;
+    display: inline-block;
+    font-size: 34px;
+    margin-top: 8px;
+}
+
+div.informacion_estado img {
+    margin-left: 15px;
+}
+
+div.informacion_estado .bienvenida_fecha {
+    width: 50%;
+}
+
+div.informacion_estado .bienvenida_fecha p span {
+    font-family: 'Gotham-Bold', sans-serif;
+}
+
+div.informacion_estado .bienvenida_fecha p.last {
+    margin-top: 5px;
+}
+
+#respuesta .contenedor_general hr {
+    border-top: solid 1px #808080 ;
+    width: 90%;
+}
+
+#segundo_divisor {
+    margin-bottom: 35px;
+}
+
+.info_transaccion p {
+    font-size: 13px;
+}
+
+.info_transaccion p.resultado_transaccion {
+    width: 50%;
+}
+
+div.volver {
+    margin-top: 35px;
+}
+
+#boton_volver {
+    background-color: transparent;
+    border: transparent;
+    color: #f0ebe9;
+    font-family: 'Gotham-Bold', sans-serif;
+    font-size: 34px;
+    padding: 6px 15px;
+    text-decoration: none
+}
+
+.info_transaccion {
+    align-items: center;
+    -webkit-align-items: center;
+    display: flex;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    margin-left: 2%;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 690px) {
+    div.informacion_estado,
+    div.informacion_empresarial {
+        display: block;
+    }
+    div.informacion_empresarial p {
+        width: 100%;
+        margin: 1.5rem 0 1rem;
+    }
+    div.informacion_estado .bienvenida_fecha, div.informacion_estado .estado {
+        width: 100%;
+    }
+
+    div.informacion_estado .bienvenida_fecha {
+        margin-top: 1rem;
+    }
+
+    .info_transaccion {
+        display: block;
+        margin-top: 10px;
+    }
+    .info_transaccion .titulo_informacion {
+        font-family: 'Gotham-Bold', sans-serif;
+    }
+    .info_transaccion p.resultado_transaccion {
+    width: 100%;
+}
+}

@@ -1,0 +1,373 @@
+@charset "UTF-8"; 
+@font-face {
+    font-family: 'Gotham-Book';
+    src: url('../fonts/Gotham-Book.eot');
+    src: url('../fonts/Gotham-Book.woff2') format('woff2'), url('../fonts/Gotham-Book.woff') format('woff'), url('../fonts/Gotham-Book.ttf') format('truetype'), url('../fonts/Gotham-Book.svg#fonts/Gotham-Book') format('svg'), url('../fonts/Gotham-Book.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Medium';
+    src: url('../fonts/Gotham-Medium.eot');
+    src: url('../fonts/Gotham-Medium.woff2') format('woff2'), url('../fonts/Gotham-Medium.woff') format('woff'), url('../fonts/Gotham-Medium.ttf') format('truetype'), url('../fonts/Gotham-Medium.svg#fonts/Gotham-Medium') format('svg'), url('../fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Bold';
+    src: url('../fonts/Gotham-Bold.eot');
+    src: url('../fonts/Gotham-Bold.woff2') format('woff2'), url('../fonts/Gotham-Bold.woff') format('woff'), url('../fonts/Gotham-Bold.ttf') format('truetype'), url('../fonts/Gotham-Bold.svg#fonts/Gotham-Bold') format('svg'), url('../fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-family: 'Gotham-Medium';
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Gotham-Medium';
+}
+
+a {
+    font-family: 'Gotham-Medium';
+    color: white;
+    text-decoration: none!important;
+    -webkit-transition: all 400ms;
+    -o-transition: all 400ms;
+    transition: all 400ms;
+}
+
+.intro a {
+    margin-top: 3rem;
+    display: block;
+}
+
+.info a:hover {
+    color: white;
+    -webkit-transform: translateX(2%);
+    -ms-transform: translateX(2%);
+    transform: translateX(2%);
+}
+
+.intro {
+    background: url('../img/temp.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.intro > .container > .row {
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-family: 'Gotham-Bold';
+    font-size: 5rem;
+    color: white;
+    line-height: 1.6;
+}
+
+h1 span {
+    background: black;
+    padding: 0.2em 0.4em;
+}
+
+.info {
+    background: #ed6423;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.ma-logo {
+    margin-bottom: 2rem;
+}
+
+.txt {
+    font-size: 1.75rem;
+    padding-top: 20%;
+    color: white;
+}
+
+.txt .lg {
+    font-size: 2rem;
+    display: block;
+}
+
+.txt .lg span {
+    color: black;
+    white-space: nowrap;
+    font-family: 'Gotham-Medium';
+}
+
+.btn {
+    background: black;
+    border-radius: 0;
+    margin-left: 1rem;
+    font-size: 1.75rem;
+}
+
+a:hover .btn {
+    color: #ee6324;
+}
+
+.row {
+    position: relative;
+}
+
+a.foros {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background: black;
+    padding: .5em .8em;
+    letter-spacing: .15em;
+}
+
+.foros:hover {
+    background-color: #ee6324;
+    color: white;
+}
+
+/*Formulario*/
+#inscripcion.formulario {
+    background: #edeae8;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+form.formulario {
+    padding-top: 40px;
+}
+
+.formulario .row {
+    border-bottom: 1px solid black;
+    padding: 30px 0;
+}
+
+h3 {
+    font-family: 'Gotham-Bold';
+    font-size: 2rem;
+}
+
+.formulario .fecha {
+    font-family: 'Gotham-Bold';
+    padding-top: 1.7em;
+}
+
+.formulario .row:last-child {
+    border: none;
+}
+
+.formulario .row:nth-child(2) p {
+    margin: 0;
+}
+
+.formulario .large {
+    font-size: 2rem;
+    font-family: 'Gotham-Bold';
+}
+
+.formulario .large span {
+    color: #ec6322;
+}
+
+.formulario .fecha {
+    padding-left: 80px;
+    position: relative;
+}
+
+.formulario .fecha:before {
+    content: '';
+    height: 100%;
+    width: 61px;
+    position: absolute;
+    display: block;
+    background: url(../img/icono_calendario.png) no-repeat left bottom ;
+    left: 0;
+    top: 0;
+}
+
+.formulario .container {
+    max-width: 900px;
+}
+
+#btn-grupos {
+    cursor: pointer;
+}
+
+.formulario .btn {
+    color: white;
+    margin: 1.2rem 0 0;
+}
+
+.help-pagos {
+    margin-top: 0.8rem;
+    font-size: 0.8rem;
+}
+
+.form-control:focus, .formulario select:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #ced4da;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.62);
+}
+
+.formulario ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #a7a7a7;
+    opacity: 1;
+    /* Firefox */
+}
+
+.formulario :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #a7a7a7;
+}
+
+.formulario ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #a7a7a7;
+}
+.formulario select:invalid {
+    color: #a7a7a7;
+}
+/*Datos*/
+.datos {
+    background: #ec6322;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.datos a:hover {
+    opacity: .8;
+    color: white;
+}
+#btn-grupos {
+    left: 0;
+    display: inline;
+    position: relative;
+    -webkit-transition: left 200ms;
+    -o-transition: left 200ms;
+    transition: left 200ms;
+}
+
+#btn-grupos:hover {
+    left: 5px;
+}
+
+#imagen_carga {
+    display: none;
+}
+
+/*Modal*/
+.modal-content {
+    background: #333333;
+    color: #fff;
+    border: none;
+    padding: 30px;
+    border-radius: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.modal-header, .modal-content .row:first-child {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.modal-content .modal-body {
+    padding: 0;
+}
+
+.modal-body .row {
+    padding: 20px 0
+}
+
+.modal-body .peque {
+    font-size: .75rem;
+}
+
+.modal-body p {
+    margin: 0;
+}
+
+.modal-body .large {
+    font-size: 2rem;
+    font-family: 'Gotham-Bold';
+    color: #ec6322;
+    line-height: 0.75;
+}
+
+.modal-content .close {
+    color: #ec6322;
+    text-shadow: none;
+    opacity: 1;
+    font-size: 2rem;
+    padding: 0 0 20px;
+}
+
+/*Formulario*/
+.form-group {
+    position: relative;
+    margin-bottom: 1;
+    transition: all 300ms;
+}
+
+.was-validated .form-group {
+    margin-bottom: 2rem;
+}
+
+.form-group input, .form-group select {
+    border-radius: 0;
+}
+
+.invalid-tooltip {
+    border-radius: 0;
+    padding: 0.55em 0.5em 0.25em;
+    font-size: .8rem;
+}
+
+/*Responsive*/
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1600px;
+    }
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 992px) {
+    a.foros {
+        right: initial;
+        bottom: 30px;
+        top: initial;
+        left: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    a.foros {
+        right: 15px;
+        bottom: 30px;
+        top: initial;
+        left: initial;
+    }
+
+    .intro .row {
+        padding-bottom: 60px;
+    }
+}
