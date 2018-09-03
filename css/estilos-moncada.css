@@ -1,5 +1,4 @@
-@charset "UTF-8"; 
-@font-face {
+@charset "UTF-8"; @font-face {
     font-family: 'Gotham-Book';
     src: url('../fonts/Gotham-Book.eot');
     src: url('../fonts/Gotham-Book.woff2') format('woff2'), url('../fonts/Gotham-Book.woff') format('woff'), url('../fonts/Gotham-Book.ttf') format('truetype'), url('../fonts/Gotham-Book.svg#fonts/Gotham-Book') format('svg'), url('../fonts/Gotham-Book.eot?#iefix') format('embedded-opentype');
@@ -30,6 +29,8 @@ html {
 
 body {
     font-family: 'Gotham-Medium';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 a {
@@ -40,44 +41,86 @@ a {
     -o-transition: all 400ms;
     transition: all 400ms;
 }
-
-.intro a {
-    margin-top: 3rem;
-    display: block;
-}
-
-.info a:hover {
-    color: white;
-    -webkit-transform: translateX(2%);
-    -ms-transform: translateX(2%);
-    transform: translateX(2%);
-}
-
-.intro {
-    background: url('../img/temp.jpg') no-repeat center;
-    background-size: cover;
-}
-
-.intro > .container > .row {
-    min-height: 100vh;
-}
-
 img {
     max-width: 100%;
 }
+.container-fluid {
+    padding-left: 110px;
+    padding-right: 110px;
+}
+/*Main Menu*/
+.navbar {
+    padding-left: 110px;
+    padding-right: 110px;
+}
 
-h1 {
+.navbar {
+    padding-top: 30px;
+}
+
+.navbar-brand img {
+    max-width: 234px;
+}
+
+.redes a {
+    background: #c7c7c7;
+    border-radius: 8px;
+    width: 42px;
+    text-align: center;
+    color: white!important;
+    padding: 8px!important;
+    line-height: 1.5;
+    margin-left: 8px;
+}
+
+.redes a:hover {
+    background: #ed6423;
+}
+/*Sección intro*/
+.intro p.nj {
+    margin-bottom: 3vh;
+}
+.intro h1 {
     font-family: 'Gotham-Bold';
-    font-size: 5rem;
-    color: white;
-    line-height: 1.6;
+    font-size: 3.5rem;
+    color: black;
+    line-height: 1.1;
 }
 
-h1 span {
-    background: black;
-    padding: 0.2em 0.4em;
+.intro h1 span {
+    color: #ed6423;
 }
-
+.nj {
+    color: #ed6423;
+}
+.ln-bt-black {
+    border-bottom: 1px solid black;
+    padding-bottom: .5rem;
+}
+.intro h3 {
+    color: #c7c7c7;
+    font-size: 2.25rem;
+    margin: 4.5vh 0 9vh;
+}
+.intro h3 small {
+    font-size: 1rem;
+    display: block;
+    font-family: 'Gotham-Book';
+}
+.intro .desc{
+    font-size: 1.25rem;
+    color: #666666;
+    font-family: 'Gotham-Book';
+}
+.intro .black-footer {
+    padding: 25px 0;
+    background: #000000;
+    color: #ffffff;
+}
+.intro .black-footer span {
+    width: 33.3333%;
+    display: inline-block;
+}
 .info {
     background: #ed6423;
     padding: 2rem;
@@ -87,7 +130,24 @@ h1 span {
 .ma-logo {
     margin-bottom: 2rem;
 }
-
+/*Carrusel*/
+.slider-mc {
+    position: relative;
+}
+.slider-mc h2 {
+    position: absolute;
+    z-index: 10;
+    font-family: 'Gotham-Bold';
+    font-size: 3.125em;
+    line-height: 1.8;
+    top: 26px;
+    left: 32px;
+}
+.slider-mc h2 span {
+    background: black;
+    color: white;
+    padding: .8rem;
+}
 .txt {
     font-size: 1.75rem;
     padding-top: 20%;
@@ -235,9 +295,11 @@ h3 {
     /* Microsoft Edge */
     color: #a7a7a7;
 }
+
 .formulario select:invalid {
     color: #a7a7a7;
 }
+
 /*Datos*/
 .datos {
     background: #ec6322;
@@ -245,10 +307,12 @@ h3 {
     padding-bottom: 20px;
     text-align: center;
 }
+
 .datos a:hover {
     opacity: .8;
     color: white;
 }
+
 #btn-grupos {
     left: 0;
     display: inline;
@@ -273,8 +337,7 @@ h3 {
     border: none;
     padding: 30px;
     border-radius: 0;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    
 }
 
 .modal-header, .modal-content .row:first-child {
