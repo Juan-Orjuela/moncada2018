@@ -54,12 +54,13 @@ img {
     padding-right: 110px;
 }
 
-.navbar {
+.navbar.bg-light {
     padding-top: 30px;
+    background: white!important;
 }
 
 .navbar-brand img {
-    max-width: 234px;
+    max-width: 200px;
 }
 
 .redes a {
@@ -82,7 +83,7 @@ img {
 }
 .intro h1 {
     font-family: 'Gotham-Bold';
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     color: black;
     line-height: 1.1;
 }
@@ -99,7 +100,7 @@ img {
 }
 .intro h3 {
     color: #c7c7c7;
-    font-size: 2.25rem;
+    font-size: 2rem;
     margin: 4.5vh 0 9vh;
 }
 .intro h3 small {
@@ -108,9 +109,10 @@ img {
     font-family: 'Gotham-Book';
 }
 .intro .desc{
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     color: #666666;
     font-family: 'Gotham-Book';
+    padding-right: 60px;
 }
 .intro .black-footer {
     padding: 25px 0;
@@ -121,32 +123,55 @@ img {
     width: 33.3333%;
     display: inline-block;
 }
-.info {
-    background: #ed6423;
-    padding: 2rem;
-    margin-bottom: 2rem;
+.intro {
+    min-height: calc(100vh - 158px);
+    
 }
-
-.ma-logo {
-    margin-bottom: 2rem;
+.intro .col-lg-7 {
+    -ms-flex: 0 0 calc(58.333333% + 110px);
+    flex: 0 0 calc(58.333333% + 110px);
+    max-width: calc(58.333333% + 110px);
+    margin-right: -110px;
+    margin-bottom: 60px;
+    margin-top: 30px;
 }
 /*Carrusel*/
 .slider-mc {
     position: relative;
 }
+.slider-mc::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    bottom: -30px;
+    right: 0;
+    background: #ee6324;
+}
+.slider-mc::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 30%;
+    bottom: -30px;
+    right: 0;
+    background: #991D38;
+}
 .slider-mc h2 {
     position: absolute;
     z-index: 10;
     font-family: 'Gotham-Bold';
-    font-size: 3.125em;
-    line-height: 1.8;
+    font-size: 3em;
+    line-height: 1.6;
     top: 26px;
     left: 32px;
 }
 .slider-mc h2 span {
     background: black;
     color: white;
-    padding: .8rem;
+    padding: .5rem .5rem .3rem;
 }
 .txt {
     font-size: 1.75rem;
