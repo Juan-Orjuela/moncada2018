@@ -99,7 +99,7 @@ img {
     padding-bottom: .5rem;
 }
 .intro h3 {
-    color: #c7c7c7;
+    color: #a7a7a7;
     font-size: 2rem;
     margin: 4.5vh 0 9vh;
 }
@@ -118,6 +118,17 @@ img {
     padding: 25px 0;
     background: #000000;
     color: #ffffff;
+    position: relative;
+}
+.intro .black-footer::before {
+    content:'';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: -110px;
+    background: #000000;
 }
 .intro .black-footer span {
     width: 33.3333%;
