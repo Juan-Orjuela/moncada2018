@@ -373,7 +373,71 @@ form.formulario {
     padding: 0.55em 0.5em 0.25em;
     font-size: .8rem;
 }
-/*Datos*/
+/*
+===============
+Conferencistas
+===============
+*/
+#conferencistas {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+#conferencistas h2 {
+    margin-bottom: 60px;
+}
+.conf-slide .item {
+    padding: 20px 12.5px;
+    position: relative;
+}
+.conf-slide .item:before {
+    content: '';
+    position: absolute;
+    display: block;
+    background: #ed6423;
+    top: 0;
+    height: 20px;
+    left: 12.5px;;
+    width: 70%;
+
+}
+.col-conf {
+    padding-left: 0;
+    padding-right: 0;
+}
+#conferencistas h3 {
+    font-size: 1.3rem;
+    font-family: 'Gotham-Bold';
+    line-height: 1.1;
+    margin: 1.2rem 0 .7rem;
+}
+#conferencistas h3:after {
+    content: '_';
+    color: #ed6423;
+}
+#conferencistas p {
+    font-family: 'Gotham-Book';
+    color: #959595;
+}
+.slick-dots {
+    background: #ec6322;
+    display: inline-block;
+    width: initial;
+    line-height: 0.5;
+}
+.slick-dots li button:before {
+    color: white;
+    opacity: 1;
+    font-size: 1.5rem;
+}
+.slick-dots li.active button:before {
+    color: white;
+    opacity: 1;
+}
+/*
+===============
+Datos
+===============
+*/
 .datos {
     background: #ec6322;
     padding-top: 20px;
@@ -402,7 +466,11 @@ form.formulario {
 #imagen_carga {
     display: none;
 }
-
+/*
+===============
+Organizadores
+===============
+*/
 /*Modal*/
 .modal-content {
     background: #333333;
