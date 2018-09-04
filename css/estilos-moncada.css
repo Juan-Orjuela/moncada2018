@@ -471,6 +471,56 @@ Datos
 Organizadores
 ===============
 */
+#organizadores {
+    background: #333333;
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+/*
+===============
+Foros
+===============
+*/
+#foro {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.img-out.izq{
+    -ms-flex: 0 0 calc(33.333333% + 110px);
+    flex: 0 0 calc(33.333333% + 110px);
+    max-width: calc(33.333333% + 110px);
+    margin-left: -110px;
+    padding: 0;
+}
+#foro h2,
+#participar h2 {
+    margin-bottom: 60px;
+}   
+.img-out {
+    box-shadow: 0 0 0 30px #991d38;
+}
+.subtitulo {
+    font-family: 'Gotham-Bold';
+    color: #ed6423;
+}
+/*
+===============
+Participar
+===============
+*/
+#participar {
+    background: #efeded;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    overflow: hidden;
+}
+.img-out.der{
+    -ms-flex: 0 0 calc(33.333333% + 110px);
+    flex: 0 0 calc(33.333333% + 110px);
+    max-width: calc(33.333333% + 110px);
+    margin-right: -110px;
+    padding: 0;
+}
 /*Modal*/
 .modal-content {
     background: #333333;
