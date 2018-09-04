@@ -48,6 +48,14 @@ img {
     padding-left: 110px;
     padding-right: 110px;
 }
+.interna h2 {
+    font-size: 2.5rem;
+    font-family: 'Gotham-Bold';
+}
+.interna h2:after {
+    content:'_';
+    color: #eb6223;
+}
 /*Main Menu*/
 .navbar {
     padding-left: 110px;
@@ -115,10 +123,11 @@ img {
     padding-right: 60px;
 }
 .intro .black-footer {
-    padding: 25px 0;
+    padding: 25px 0 25px 30px;
     background: #000000;
     color: #ffffff;
     position: relative;
+    margin-left: -15px;
 }
 .intro .black-footer::before {
     content:'';
@@ -135,7 +144,7 @@ img {
     display: inline-block;
 }
 .intro {
-    min-height: calc(100vh - 158px);
+    overflow: hidden;
     
 }
 .intro .col-lg-7 {
@@ -145,6 +154,13 @@ img {
     margin-right: -110px;
     margin-bottom: 60px;
     margin-top: 30px;
+}
+.intro > .row:first-child {
+    min-height: calc(100vh - 233px);
+}
+.creditos img {
+    width: 100%;
+    max-width: 280px;
 }
 /*Carrusel*/
 .slider-mc {
@@ -232,23 +248,26 @@ a.foros {
 
 /*Formulario*/
 #inscripcion.formulario {
-    background: #edeae8;
+    background: #eaeaea;
     padding-top: 90px;
-    padding-bottom: 90px;
+    padding-bottom: 60px;
 }
 
 form.formulario {
     padding-top: 40px;
 }
-
 .formulario .row {
-    border-bottom: 1px solid black;
     padding: 30px 0;
 }
-
-h3 {
-    font-family: 'Gotham-Bold';
-    font-size: 2rem;
+.formulario .row:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 16.666666%;
+    right: 16.666666%;
+    height: 1px;
+    background: black;
+    
 }
 
 .formulario .fecha {
@@ -256,8 +275,8 @@ h3 {
     padding-top: 1.7em;
 }
 
-.formulario .row:last-child {
-    border: none;
+.formulario .row:last-child:after {
+   display: none;
 }
 
 .formulario .row:nth-child(2) p {
@@ -290,7 +309,7 @@ h3 {
 }
 
 .formulario .container {
-    max-width: 900px;
+   /* max-width: 900px;*/
 }
 
 #btn-grupos {
@@ -335,7 +354,25 @@ h3 {
 .formulario select:invalid {
     color: #a7a7a7;
 }
+.form-group {
+    position: relative;
+    margin-bottom: 1;
+    transition: all 300ms;
+}
 
+.was-validated .form-group {
+    margin-bottom: 2rem;
+}
+
+.form-group input, .form-group select {
+    border-radius: 0;
+}
+
+.invalid-tooltip {
+    border-radius: 0;
+    padding: 0.55em 0.5em 0.25em;
+    font-size: .8rem;
+}
 /*Datos*/
 .datos {
     background: #ec6322;
@@ -412,25 +449,7 @@ h3 {
 }
 
 /*Formulario*/
-.form-group {
-    position: relative;
-    margin-bottom: 1;
-    transition: all 300ms;
-}
 
-.was-validated .form-group {
-    margin-bottom: 2rem;
-}
-
-.form-group input, .form-group select {
-    border-radius: 0;
-}
-
-.invalid-tooltip {
-    border-radius: 0;
-    padding: 0.55em 0.5em 0.25em;
-    font-size: .8rem;
-}
 
 /*Responsive*/
 @media (min-width: 1200px) {
