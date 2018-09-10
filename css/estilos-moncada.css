@@ -536,17 +536,45 @@ Datos
 Organizadores
 ===============
 */
+#organizadores h3 {
+    font-size: 1.8rem;
+    font-family: 'Gotham-Bold';
+    color: #ed6423;
+    display: inline-block;
+}
+#organizadores h3:after{
+    color: black;
+    content: '_';
+}
 #organizadores {
-    background: #333333;
+    background: #fff;
     padding-top: 160px;
     padding-bottom: 160px;
+    border-top: 20px solid #eb6223;
 }
-
+#organizadores .logo-moncada{
+    width: 143px;
+}
+#organizadores .logo-kreab{
+    width: 139px;
+}
+#organizadores .logo-unad{
+    width: 185px;
+}
+#organizadores .logo-tmf{
+    width: 145px;
+}
+#organizadores [class*='logo'] {
+    margin-left: 11%;
+}
 /*
 ===============
 Foros
 ===============
 */
+#foro {
+    background: #efeded;
+}
 #foro, #participar, #publico, #contacto {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -612,7 +640,7 @@ Participar
 ===============
 */
 #participar {
-    background: #efeded;
+    background: #fff;
 }
 
 /*
@@ -673,7 +701,47 @@ Publico
     font-size: 2rem;
     padding: 0 0 20px;
 }
-
+/*
+===============
+Apoyos
+===============
+*/
+#apoyos h3 {
+    font-size: 1.8rem;
+    font-family: 'Gotham-Bold';
+    color: #ffffff;
+    display: inline-block;
+}
+#apoyos h3:after{
+    color: #ed6423;
+    content: '_';
+}
+#apoyos {
+    background: #000;
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+#apoyos [class*='logo'] {
+    margin-left: 3.5%;
+}
+#apoyos .logo-salerno {
+    width: 142px;
+}
+#apoyos .logo-ascom {
+    width: 225px;
+}
+#apoyos .logo-ascom {
+    width: 225px;
+}
+#apoyos .logo-lanota {
+    width: 232px;
+}
+#apoyos .logo-aviatur {
+    width: 252px;
+}
+#apoyos .logo-bibrand {
+    width: 112px;
+}
 /*
 ===============
 Contacto
