@@ -478,7 +478,12 @@ Conferencistas
     font-family: 'Gotham-Book';
     color: #959595;
 }
-
+.slick-slide:focus {
+    outline: none;
+}
+.slick-slide:hover {
+    cursor: pointer;
+}
 .slick-dots {
     background: #ec6322;
     display: inline-block;
@@ -496,7 +501,80 @@ Conferencistas
     color: white;
     opacity: 1;
 }
+/*Modal*/
+.modal-backdrop {
+    background-color: #ffffff;
+}
+.modal-backdrop.show {
+    opacity: 1;
+}
+.modal-lg {
+    max-width: 1000px;
+}
+.modal-content {
+    background: #fff;
+    border: none;
+    padding: 30px;
+    border-radius: 0;
+}
 
+.modal-content .modal-body {
+    padding: 0;
+}
+
+.modal-body .row {
+    padding: 20px 0
+}
+.modal-content .close {
+    color: #ec6322;
+    text-shadow: none;
+    opacity: 1;
+    font-size: 2rem;
+    padding: 0 0 20px;
+}
+.modal-body .img-wrap {
+    box-shadow: 0 0 0 10px #ed6423;
+    position: relative;
+
+
+}
+.modal-body .img-wrap img {
+    width: 100%;
+}
+
+.modal-body .img-wrap::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 30px;
+    width: 90px;
+    background: #991d38;
+    left: -20px;
+    bottom: -20px;
+    top: intial;
+}
+.modal h3 {
+    font-family: 'Gotham-Bold';
+    margin-top:4rem;
+}
+.modal h3:after {
+    content: '_';
+    color: #ed6423;
+}
+.modal-body .quien {
+    margin-top: -4.4rem;
+    padding-right: 10%;
+    padding-left: 5%;
+}
+.modal-header {
+    border-color: #c4c5c9;
+}
+.modal-body .quien p {
+    margin-top: 1.8rem;
+}
+.modal-body .perfil {
+    padding-top: 4rem;
+}
 /*
 ===============
 Datos
@@ -551,6 +629,7 @@ Organizadores
     padding-top: 160px;
     padding-bottom: 160px;
     border-top: 20px solid #eb6223;
+    text-align: center;
 }
 #organizadores .logo-moncada{
     width: 143px;
@@ -658,49 +737,7 @@ Publico
     font-size: 1.2rem;
 }
 
-/*Modal*/
-.modal-content {
-    background: #333333;
-    color: #fff;
-    border: none;
-    padding: 30px;
-    border-radius: 0;
-}
 
-.modal-header, .modal-content .row:first-child {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-}
-
-.modal-content .modal-body {
-    padding: 0;
-}
-
-.modal-body .row {
-    padding: 20px 0
-}
-
-.modal-body .peque {
-    font-size: .75rem;
-}
-
-.modal-body p {
-    margin: 0;
-}
-
-.modal-body .large {
-    font-size: 2rem;
-    font-family: 'Gotham-Bold';
-    color: #ec6322;
-    line-height: 0.75;
-}
-
-.modal-content .close {
-    color: #ec6322;
-    text-shadow: none;
-    opacity: 1;
-    font-size: 2rem;
-    padding: 0 0 20px;
-}
 /*
 ===============
 Apoyos
@@ -720,6 +757,7 @@ Apoyos
     background: #000;
     padding-top: 160px;
     padding-bottom: 160px;
+    text-align: center;
 }
 #apoyos [class*='logo'] {
     margin-left: 3.5%;
