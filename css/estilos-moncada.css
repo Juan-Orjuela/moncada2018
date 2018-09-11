@@ -42,9 +42,9 @@ a {
     font-family: 'Gotham-Medium';
     color: white;
     text-decoration: none!important;
-    -webkit-transition: all 400ms;
-    -o-transition: all 400ms;
-    transition: all 400ms;
+    -webkit-transition: color 400ms, background-color 400ms, opacity 400ms;
+    -o-transition: color 400ms, background-color 400ms, opacity 400ms;
+    transition: color 400ms, background-color 400ms, opacity 400ms;
 }
 
 img {
@@ -960,7 +960,7 @@ Contacto
     }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (min-width: 992px) and (max-width: 1300px) {
     .collapse .navbar-nav {
         flex-wrap: wrap;
     }
@@ -969,7 +969,9 @@ Contacto
         min-width: 50%;
         padding: .1rem;
     }
+}
 
+@media screen and (max-width: 1300px) {
     .slider-mc::before {
         top: -20px;
         left: -20px;
@@ -1014,7 +1016,6 @@ Contacto
         left: 0;
         right: 0;
     }
-   
 
     #apoyos .logo-salerno {
         width: calc(142px * 0.6);
@@ -1043,12 +1044,156 @@ Contacto
 }
 
 @media (max-width: 992px) {
-    a.foros {
-        right: initial;
-        bottom: 30px;
-        top: initial;
-        left: 15px;
+    .navbar-brand img {
+        max-width: 180px;
     }
+
+    .redes {
+        display: none;
+    }
+
+    /*Nav Principal*/
+    .redes-mobile {
+        margin-top: 20px;
+    }
+
+    .redes-mobile a:first-child {
+        background-image: url(../img/icon-linkedin.png);
+    }
+
+    .redes-mobile a:nth-child(2) {
+        background-image: url(../img/icon-facebook.png);
+    }
+
+    .redes-mobile a:nth-child(3) {
+        background-image: url(../img/icon-twitter.png);
+    }
+
+    .redes-mobile a {
+        background-color: #000;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        border-radius: 8px;
+        width: 30px;
+        min-width: initial!important;
+        height: 30px;
+        text-align: center;
+        color: transparent!important;
+        padding: 8px!important;
+        line-height: 1.5;
+        overflow: hidden;
+        display: inline-block;
+    }
+
+    .redes-mobile a:hover {
+        background-color: #ed6423;
+    }
+
+    .navbar-collapse .navbar-nav > a {
+        color: #ffffff;
+        margin-bottom: 0!important
+    }
+
+    .navbar-collapse .navbar-nav {
+        padding: 50px;
+    }
+
+    .navbar-collapse {
+        background-color: #ed6423;
+        margin-left: -50px;
+        margin-right: -50px;
+        transform: translateY(20px);
+    }
+
+    .navbar {
+        padding-bottom: 50px;
+    }
+
+    .navbar-light .navbar-toggler {
+        border: 2px solid #7f7f7f;
+        border-radius: 0;
+        border-color: #7f7f7f;
+    }
+
+    .navbar-toggler:focus {
+        outline: none;
+    }
+
+    /*Intro*/
+    .intro .col-lg-7.sangrado {
+        -ms-flex: 0 0 calc(100% + 50px);
+        flex: 0 0 calc(100% + 50px);
+        max-width: calc(100% + 50px);
+        margin-right: -50px;
+    }
+
+    .black-footer {
+        width: 60%;
+        float: left;
+    }
+
+    .creditos {
+        width: 40%;
+        margin-top: 15px;
+    }
+
+    .intro .row:last-child {
+        padding-bottom: 0;
+    }
+
+    /*Internas*/
+    .img-out.izq {
+        -ms-flex: 0 0 calc(100% + 50px);
+        flex: 0 0 calc(100% + 50px);
+        max-width: calc(100% + 50px);
+        margin-left: -50px;
+    }
+
+    .img-out.der {
+        -ms-flex: 0 0 calc(100% + 50px);
+        flex: 0 0 calc(100% + 50px);
+        max-width: calc(100% + 50px);
+        margin-right: -50px;
+    }
+
+    #foro .img-wrap {
+        margin-bottom: 6rem;
+        max-height: 60vh;
+        overflow: hidden;
+    }
+
+    #foro, #participar, #publico, #contacto {
+        padding-top: 90px;
+        padding-bottom: 90px;
+        overflow: hidden;
+    }
+
+    #participar .img-wrap {
+        margin-top: 6rem;
+        max-height: 60vh;
+        overflow: hidden;
+    }
+
+    #participar .img-wrap img {
+        position: relative;
+        margin-top: -20%;
+    }
+#apoyos {
+    padding-top: 90px;
+    padding-bottom: 90px;}
+    #apoyos [class*='logo'] {
+        margin-left: 15%;
+        align-self: top;
+    }
+    #apoyos .logo-bibrand {
+        margin-top: 3rem;
+    }
+    #apoyos .fila-2 {
+        margin-left: -15%;
+        display: block;
+    }
+    
 }
 
 @media (max-width: 768px) {
@@ -1062,6 +1207,43 @@ Contacto
     .intro .row {
         padding-bottom: 60px;
     }
+    .black-footer {
+        width: 100%;
+        float: initial;
+        margin-left: 0!important;
+    }
+    .black-footer:before {
+        display: none!important;
+    }
+
+    .creditos {
+        width: 100%;
+        margin: 30px 0 10px -8%;
+        text-align: center!important;
+    }
+    #organizadores {
+        text-align: center;
+    }
+    #organizadores .col-md-6:last-child {
+        margin-top:  5rem;
+    }
+    #apoyos .fila-2 {
+        margin-left: 0;
+        display: initial;
+    }
+    #apoyos [class*='logo'] {
+        margin-left: 0;
+        align-self: initial;
+        display: block;
+        margin-bottom: 4rem;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #apoyos .logo-bibrand {
+        margin-bottom: 0;
+    }
+    
 }
 
 @media (max-width: 576px) {
@@ -1071,6 +1253,23 @@ Contacto
 
     h1 {
         font-size: 4rem;
+    }
+    #organizadores .logo-moncada {
+        width: calc(143px * 0.6);
+    }
+
+    #organizadores .logo-kreab {
+        width: calc(139px * 0.7);
+        margin-left: 11%;
+    }
+
+    #organizadores .logo-unad {
+        width: calc(185px * 0.55);
+    }
+
+    #organizadores .logo-tmf {
+        width: calc(145px * 0.5);
+        margin-left: 11%;
     }
 }
 
