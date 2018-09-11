@@ -478,12 +478,15 @@ Conferencistas
     font-family: 'Gotham-Book';
     color: #959595;
 }
+
 .slick-slide:focus {
     outline: none;
 }
+
 .slick-slide:hover {
     cursor: pointer;
 }
+
 .slick-dots {
     background: #ec6322;
     display: inline-block;
@@ -501,16 +504,20 @@ Conferencistas
     color: white;
     opacity: 1;
 }
+
 /*Modal*/
 .modal-backdrop {
     background-color: #ffffff;
 }
+
 .modal-backdrop.show {
     opacity: 1;
 }
+
 .modal-lg {
     max-width: 1000px;
 }
+
 .modal-content {
     background: #fff;
     border: none;
@@ -525,6 +532,7 @@ Conferencistas
 .modal-body .row {
     padding: 20px 0
 }
+
 .modal-content .close {
     color: #ec6322;
     text-shadow: none;
@@ -532,12 +540,12 @@ Conferencistas
     font-size: 2rem;
     padding: 0 0 20px;
 }
+
 .modal-body .img-wrap {
     box-shadow: 0 0 0 10px #ed6423;
     position: relative;
-
-
 }
+
 .modal-body .img-wrap img {
     width: 100%;
 }
@@ -553,28 +561,35 @@ Conferencistas
     bottom: -20px;
     top: intial;
 }
+
 .modal h3 {
     font-family: 'Gotham-Bold';
-    margin-top:4rem;
+    margin-top: 4rem;
 }
+
 .modal h3:after {
     content: '_';
     color: #ed6423;
 }
+
 .modal-body .quien {
     margin-top: -4.4rem;
     padding-right: 10%;
     padding-left: 5%;
 }
+
 .modal-header {
     border-color: #c4c5c9;
 }
+
 .modal-body .quien p {
     margin-top: 1.8rem;
 }
+
 .modal-body .perfil {
     padding-top: 4rem;
 }
+
 /*
 ===============
 Datos
@@ -615,15 +630,17 @@ Organizadores
 ===============
 */
 #organizadores h3 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-family: 'Gotham-Bold';
     color: #ed6423;
     display: inline-block;
 }
-#organizadores h3:after{
+
+#organizadores h3:after {
     color: black;
     content: '_';
 }
+
 #organizadores {
     background: #fff;
     padding-top: 160px;
@@ -631,21 +648,27 @@ Organizadores
     border-top: 20px solid #eb6223;
     text-align: center;
 }
-#organizadores .logo-moncada{
+
+#organizadores .logo-moncada {
     width: 143px;
 }
-#organizadores .logo-kreab{
+
+#organizadores .logo-kreab {
     width: 139px;
 }
-#organizadores .logo-unad{
+
+#organizadores .logo-unad {
     width: 185px;
 }
-#organizadores .logo-tmf{
+
+#organizadores .logo-tmf {
     width: 145px;
 }
+
 #organizadores [class*='logo'] {
     margin-left: 11%;
 }
+
 /*
 ===============
 Foros
@@ -654,6 +677,7 @@ Foros
 #foro {
     background: #efeded;
 }
+
 #foro, #participar, #publico, #contacto {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -737,49 +761,58 @@ Publico
     font-size: 1.2rem;
 }
 
-
 /*
 ===============
 Apoyos
 ===============
 */
 #apoyos h3 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-family: 'Gotham-Bold';
     color: #ffffff;
     display: inline-block;
 }
-#apoyos h3:after{
+
+#apoyos h3:after {
     color: #ed6423;
     content: '_';
 }
+
 #apoyos {
     background: #000;
     padding-top: 160px;
     padding-bottom: 160px;
     text-align: center;
 }
+
 #apoyos [class*='logo'] {
     margin-left: 3.5%;
 }
+
 #apoyos .logo-salerno {
     width: 142px;
 }
+
 #apoyos .logo-ascom {
     width: 225px;
 }
+
 #apoyos .logo-ascom {
     width: 225px;
 }
+
 #apoyos .logo-lanota {
     width: 232px;
 }
+
 #apoyos .logo-aviatur {
     width: 252px;
 }
+
 #apoyos .logo-bibrand {
     width: 112px;
 }
+
 /*
 ===============
 Contacto
@@ -807,6 +840,66 @@ Contacto
 @media screen and (max-width: 1600px) {
     .intro .black-footer span {
         width: 49%;
+    }
+
+    #organizadores h3, #apoyos h3 {
+        display: block;
+        margin-bottom: 3rem;
+        text-align: left;
+    }
+
+    #organizadores {
+        text-align: left;
+    }
+
+    #organizadores [class*='logo'] {
+        margin-left: 0;
+    }
+
+    #organizadores .logo-moncada {
+        width: calc(143px * 0.8);
+    }
+
+    #organizadores .logo-kreab {
+        width: calc(139px * 0.9);
+        margin-left: 11%;
+    }
+
+    #organizadores .logo-unad {
+        width: calc(185px * 0.75);
+    }
+
+    #organizadores .logo-tmf {
+        width: calc(145px * 0.7);
+        margin-left: 11%;
+    }
+
+    #apoyos .logo-salerno {
+        width: calc(142px * 0.7);
+        margin-left: 0!important;
+    }
+
+    #apoyos .logo-ascom {
+        width: calc(225px * 0.7);
+    }
+
+    #apoyos .logo-ascom {
+        width: calc(225px * 0.7);
+    }
+
+    #apoyos .logo-lanota {
+        width: calc(232px * 0.7);
+    }
+
+    #apoyos .logo-aviatur {
+        width: calc(252px * 0.7);
+    }
+
+    #apoyos .logo-bibrand {
+        width: calc(112px * 0.7);
+    }
+    #apoyos [class*='logo'] {
+    margin-left: 8%;
     }
 }
 
@@ -866,6 +959,10 @@ Contacto
     .interna h2 {
         font-size: 2.2rem;
         line-height: 1;
+    }
+    /*Cambios de elementos*/
+    #apoyos [class*='logo'] {
+    margin-left: 6%;
     }
 }
 
