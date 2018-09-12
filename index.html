@@ -18,8 +18,8 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#"><img src="img/logo-compliance@2x.png" alt="Compliance II"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-            aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -45,13 +45,15 @@
     </nav>
     <div class="container-fluid intro">
         <div class="row align-items-center">
-            <div class="col-lg-5">
+            <div class="col-lg-5 txt-intro">
                 <p class="nj"><span class="ln-bt-black">II FORO SOBRE</span></p>
                 <h1>Compliance<br> <span class="nj">&</span> Transparencia<span class="nj">_</span></h1>
                 <h3>15/16 Noviembre <small>Cartagena de Indias - Colombia</small></h3>
-                <p class="desc">Por segundo año consecutivo expertos de Italia, España, Perú, Argentina y Colombia debatirán
+                <p class="desc">Por segundo año consecutivo expertos de Italia, España, Perú, Argentina y Colombia
+                    debatirán
                     alrededor de prevención de riesgos legales empresariales, compliance y transparencia.</p>
-                <a class="btn" href="http://eventosmoncada.com.co/compliance-2017/" target="_blank" title="Ver foro anterior">Compliance 2017</a>
+                <p class="intro-org">ORGANIZAN</p>
+                <img src="img/ma-logo@2x.png" alt="Moncada - Kreab">
             </div>
             <div class="col-lg-7 sangrado">
                 <div class="slider-mc">
@@ -89,8 +91,9 @@
                     <span>#FOROS<b>KREAB</b></span>
                 </div>
             </div>
-            <div class="col-lg-7 creditos text-right">
-                <img src="img/ma-logo@2x.png" alt="Moncada - Kreab">
+            <div class="col-lg-7 comp-2017 text-right">
+                <a class="btn btn-2017" href="http://eventosmoncada.com.co/compliance-2017/" target="_blank" title="Ver foro anterior">Compliance
+                    2017</a>
             </div>
         </div>
     </div>
@@ -108,7 +111,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-xl-8 offset-xl-2">
+            <div class="col-xl-8 offset-xl-2 text-puntos">
                 <p>Precio</p>
                 <p class="large">1 millón <span>COP</span>
                 </p>
@@ -120,14 +123,16 @@
             <div class="col-xl-8 offset-xl-2 formulario_container">
 
                 <!--AGREGAR FORMULARIO AQUÍ-->
-                <form class="formulario needs-validation" action="https://checkout.payulatam.com/ppp-web-gateway-payu" method="post" novalidate>
+                <form class="formulario needs-validation" action="https://checkout.payulatam.com/ppp-web-gateway-payu"
+                    method="post" novalidate>
                     <p>Debe diligenciar todos los campos</p>
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label class="sr-only" id="placeholder_nombre" for="mon_nombre">Nombre completo
                                 <span>*</span>
                             </label>
-                            <input id="mon_nombre" class="form-control required" type="text" name="buyerFullName" placeholder="Nombre completo*" required>
+                            <input id="mon_nombre" class="form-control required" type="text" name="buyerFullName"
+                                placeholder="Nombre completo*" required>
                             <div class="invalid-tooltip">Escriba su nombre completo</div>
 
                         </div>
@@ -135,7 +140,8 @@
                             <label class="sr-only" id="placeholder_correo" for="mon_correo">Correo electrónico
                                 <span>*</span>
                             </label>
-                            <input id="mon_correo" class="form-control required" type="email" name="buyerEmail" placeholder="Correo electrónico*" required>
+                            <input id="mon_correo" class="form-control required" type="email" name="buyerEmail"
+                                placeholder="Correo electrónico*" required>
                             <div class="invalid-tooltip">Escriba un correo válido</div>
 
                         </div>
@@ -145,14 +151,16 @@
                             <label class="sr-only" for="mon_tel">Teléfono
                                 <span>*</span>
                             </label>
-                            <input id="mon_tel" class="form-control required" type="tel" name="telephone" placeholder="Teléfono*" required>
+                            <input id="mon_tel" class="form-control required" type="tel" name="telephone" placeholder="Teléfono*"
+                                required>
                             <div class="invalid-tooltip">Escriba un número de contacto</div>
                         </div>
                         <div class="form-group col-md-6">
                             <label class="sr-only" for="mon_id">ID
                                 <span>*</span>
                             </label>
-                            <input id="mon_id" class="form-control required" type="text" name="documento" placeholder="ID*" required>
+                            <input id="mon_id" class="form-control required" type="text" name="documento" placeholder="ID*"
+                                required>
                             <div class="invalid-tooltip">Escriba su cédula o número de identificación</div>
                         </div>
                     </div>
@@ -161,7 +169,8 @@
                             <label class="sr-only" for="mon_empresa">Empresa
                                 <span>*</span>
                             </label>
-                            <input id="mon_empresa" class="form-control required" type="text" name="empresa" placeholder="Empresa*" required>
+                            <input id="mon_empresa" class="form-control required" type="text" name="empresa"
+                                placeholder="Empresa*" required>
                             <div class="invalid-tooltip">Escriba la empresa donde trabaja</div>
                         </div>
 
@@ -169,13 +178,15 @@
                             <label class="sr-only" for="mon_cargo">Cargo
                                 <span>*</span>
                             </label>
-                            <input id="mon_cargo" class="form-control required" type="text" name="cargo" placeholder="Cargo*" required>
+                            <input id="mon_cargo" class="form-control required" type="text" name="cargo" placeholder="Cargo*"
+                                required>
                             <div class="invalid-tooltip">Escriba el cargo que desempeña</div>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6" id="campo_select">
-                            <select id="select_pais" class="custom-select required" name="pais" placeholder="País*" required>
+                            <select id="select_pais" class="custom-select required" name="pais" placeholder="País*"
+                                required>
                                 <option value="" disabled selected style="display: none;"> País*</option>
                                 <option value="AF">Afganistán</option>
                                 <option value="AL">Albania</option>
@@ -418,7 +429,8 @@
                             <label class="sr-only" for="mon_ciudad">Ciudad
                                 <span>*</span>
                             </label>
-                            <input id="mon_ciudad" class="form-control required" type="text" name="ciudad" placeholder="Ciudad*" required>
+                            <input id="mon_ciudad" class="form-control required" type="text" name="ciudad" placeholder="Ciudad*"
+                                required>
                             <div class="invalid-tooltip">Escriba su ciudad de origen</div>
                         </div>
                     </div>
@@ -428,7 +440,8 @@
 
                         <img id="imagen_carga" src="/img/cargando.gif" alt="cargando">
                     </div>
-                    <p class="help-pagos">Será dirigido a PayU para finalizar la inscripción de manera segura. Aceptamos
+                    <p class="help-pagos">Será dirigido a PayU para finalizar la inscripción de manera segura.
+                        Aceptamos
                         diferentes métodos de pago.</p>
                     <div class="campo">
                         <input name="amount" type="hidden" value="1190000">
@@ -456,7 +469,8 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <a href="politica_tratamiento_datos.pdf" target="_blank">Al enviar la inscripción acepta la política
+                    <a href="politica_tratamiento_datos.pdf" target="_blank">Al enviar la inscripción acepta la
+                        política
                         de tratamiento de datos.</a>
                 </div>
             </div>
@@ -475,92 +489,110 @@
                 <div class="conf-wrap">
                     <div class="conf-slide">
                         <div data-toggle="modal" data-target="#modal-conf1">
-                            <div class="item"><img src="img/conf-ejemplo.jpg" alt="ejemplo"><h3>Wagner de Campos Rosario</h3>
+                            <div class="item"><img src="img/conf-ejemplo.jpg" alt="ejemplo">
+                                <h3>Wagner de Campos Rosario</h3>
                                 <p>Brasil</p>
                             </div>
                         </div>
                         <div data-toggle="modal" data-target="#modal-conf2">
-                            <div class="item"><img src="img/conf-ejemplo.jpg" alt="ejemplo"><h3>Alain Casanovas</h3>
+                            <div class="item"><img src="img/conf-ejemplo.jpg" alt="ejemplo">
+                                <h3>Alain Casanovas</h3>
                                 <p>España</p>
                             </div>
                         </div>
                         <div data-toggle="modal" data-target="#modal-conf3">
-                            <div class="item"><img src="img/conf-ejemplo.jpg" alt="ejemplo"><h3>Juan Carlos Medina</h3>
+                            <div class="item"><img src="img/conf-ejemplo.jpg" alt="ejemplo">
+                                <h3>Juan Carlos Medina</h3>
                                 <p>Colombia</p>
                             </div>
                         </div>
                         <div data-toggle="modal" data-target="#modal-conf4">
-                            <div class="item"><img src="img/conf-ejemplo.jpg" alt="ejemplo"><h3>Juan Carlos Moncada</h3>
+                            <div class="item"><img src="img/conf-ejemplo.jpg" alt="ejemplo">
+                                <h3>Juan Carlos Moncada</h3>
                                 <p>Colombia</p>
                             </div>
                         </div>
                         <div data-toggle="modal" data-target="#modal-conf5">
-                            <div class="item"><img src="img/conf-ejemplo.jpg" alt="ejemplo"><h3>Alfonso Castro Cid</h3>
+                            <div class="item"><img src="img/conf-ejemplo.jpg" alt="ejemplo">
+                                <h3>Alfonso Castro Cid</h3>
                                 <p>Colombia</p>
                             </div>
                         </div>
                         <div data-toggle="modal" data-target="#modal-conf6">
-                            <div class="item"><img src="img/conf-ejemplo-m.jpg" alt="ejemplo"><h3>María Claudia Rojas</h3>
+                            <div class="item"><img src="img/conf-ejemplo-m.jpg" alt="ejemplo">
+                                <h3>María Claudia Rojas</h3>
                                 <p>Colombia</p>
                             </div>
                         </div>
                         <div data-toggle="modal" data-target="#modal-conf7">
-                            <div class="item"><img src="img/conf-ejemplo-m.jpg" alt="ejemplo"><h3>Roberta Troisi</h3>
+                            <div class="item"><img src="img/conf-ejemplo-m.jpg" alt="ejemplo">
+                                <h3>Roberta Troisi</h3>
                                 <p>Italia</p>
                             </div>
                         </div>
                         <div data-toggle="modal" data-target="#modal-conf8">
-                            <div class="item"><img src="img/conf-ejemplo.jpg" alt="ejemplo"><h3>Antonio Scocozza</h3>
+                            <div class="item"><img src="img/conf-ejemplo.jpg" alt="ejemplo">
+                                <h3>Antonio Scocozza</h3>
                                 <p>Italia</p>
                             </div>
                         </div>
                         <div data-toggle="modal" data-target="#modal-conf9">
-                            <div class="item"><img src="img/conf-ejemplo-m.jpg" alt="ejemplo"><h3>Charlotte Erkhammar</h3>
+                            <div class="item"><img src="img/conf-ejemplo-m.jpg" alt="ejemplo">
+                                <h3>Charlotte Erkhammar</h3>
                                 <p>USA</p>
                             </div>
                         </div>
                         <div data-toggle="modal" data-target="#modal-conf10">
-                            <div class="item"><img src="img/conf-ejemplo-m.jpg" alt="ejemplo"><h3>Ana María Moncada</h3>
+                            <div class="item"><img src="img/conf-ejemplo-m.jpg" alt="ejemplo">
+                                <h3>Ana María Moncada</h3>
                                 <p>Colombia</p>
                             </div>
                         </div>
                         <div data-toggle="modal" data-target="#modal-conf11">
-                            <div class="item"><img src="img/conf-ejemplo-m.jpg" alt="ejemplo"><h3>Michele Scocozza</h3>
+                            <div class="item"><img src="img/conf-ejemplo-m.jpg" alt="ejemplo">
+                                <h3>Michele Scocozza</h3>
                                 <p>Italia</p>
                             </div>
                         </div>
                         <div data-toggle="modal" data-target="#modal-conf12">
-                            <div class="item"><img src="img/conf-ejemplo.jpg" alt="ejemplo"><h3>Albeiro Yepes</h3>
+                            <div class="item"><img src="img/conf-ejemplo.jpg" alt="ejemplo">
+                                <h3>Albeiro Yepes</h3>
                                 <p>Colombia</p>
                             </div>
                         </div>
                         <div data-toggle="modal" data-target="#modal-conf13">
-                            <div class="item"><img src="img/conf-ejemplo-m.jpg" alt="ejemplo"><h3>Ana Lucía Barrientos</h3>
+                            <div class="item"><img src="img/conf-ejemplo-m.jpg" alt="ejemplo">
+                                <h3>Ana Lucía Barrientos</h3>
                                 <p>Colombia</p>
                             </div>
                         </div>
                         <div data-toggle="modal" data-target="#modal-conf14">
-                            <div class="item"><img src="img/conf-ejemplo.jpg" alt="ejemplo"><h3>Alejandro Morales Tobón</h3>
+                            <div class="item"><img src="img/conf-ejemplo.jpg" alt="ejemplo">
+                                <h3>Alejandro Morales Tobón</h3>
                                 <p>Colombia</p>
                             </div>
                         </div>
                         <div data-toggle="modal" data-target="#modal-conf15">
-                            <div class="item"><img src="img/conf-ejemplo.jpg" alt="ejemplo"><h3>Nelson Remolina</h3>
+                            <div class="item"><img src="img/conf-ejemplo.jpg" alt="ejemplo">
+                                <h3>Nelson Remolina</h3>
                                 <p>Colombia</p>
                             </div>
                         </div>
                         <div data-toggle="modal" data-target="#modal-conf16">
-                            <div class="item"><img src="img/conf-ejemplo.jpg" alt="ejemplo"><h3>Oscar Puccinelli</h3>
+                            <div class="item"><img src="img/conf-ejemplo.jpg" alt="ejemplo">
+                                <h3>Oscar Puccinelli</h3>
                                 <p>Argentina</p>
                             </div>
                         </div>
                         <div data-toggle="modal" data-target="#modal-conf17">
-                            <div class="item"><img src="img/conf-ejemplo.jpg" alt="ejemplo"><h3>Virgilio de Antonio</h3>
+                            <div class="item"><img src="img/conf-ejemplo.jpg" alt="ejemplo">
+                                <h3>Virgilio de Antonio</h3>
                                 <p>Italia</p>
                             </div>
                         </div>
                         <div data-toggle="modal" data-target="#modal-conf18">
-                            <div class="item"><img src="img/conf-ejemplo.jpg" alt="ejemplo"><h3>Álvaro Barrero Buitrago</h3>
+                            <div class="item"><img src="img/conf-ejemplo.jpg" alt="ejemplo">
+                                <h3>Álvaro Barrero Buitrago</h3>
                                 <p>Colombia</p>
                             </div>
                         </div>
@@ -575,14 +607,17 @@
     <!--Organizadores-->
     <div id="organizadores" class="container-fluid interna">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-lg-4 col-md-12 org">
                 <h3>Organizan</h3>
                 <img class="logo-moncada" src="img/logo-moncada.png" alt="Moncada Abogados">
                 <img class="logo-kreab" src="img/logo-kreab.png" alt="Kreab">
             </div>
-            <div class="col-md-6">
-                <h3>Patrocinan</h3>
+            <div class="col-lg-4 col-md-6 po">
+                <h3>Patrocinador oficial</h3>
                 <img class="logo-unad" src="img/logo-unad.png" alt="UNAD">
+            </div>
+            <div class="col-lg-4 col-md-6 p">
+                <h3>Patrocinador</h3>
                 <img class="logo-tmf" src="img/logo-tmf.png" alt="TMF">
             </div>
         </div>
@@ -604,20 +639,30 @@
                 </div>
                 <div class="row">
                     <div class='col-md-8'>
-                        <p>KREAB Colombia y Moncada Abogados, por segundo año consecutivo, y para esta versión, se unen a
-                            fin de desarrollar conjuntamente el II Foro Compliance & Transparencia, a celebrarse los días
-                            15 y 16 de noviembre en el Centro de Convenciones del Hotel Las Américas, de la ciudad de Cartagena
+                        <p>KREAB Colombia y Moncada Abogados, por segundo año consecutivo, y para esta versión, se unen
+                            a
+                            fin de desarrollar conjuntamente el II Foro Compliance & Transparencia, a celebrarse los
+                            días
+                            15 y 16 de noviembre en el Centro de Convenciones del Hotel Las Américas, de la ciudad de
+                            Cartagena
                             de Indias.</p>
-                        <p>Asistirá Wagner De Campos Rosario, Ministro de Transparencia y Contraloría General de Brasil.
-                            Así mismo, expertos de la Universitá degli Studi di Salerno (Italia); y de la Asociación Española
+                        <p>Asistirá Wagner De Campos Rosario, Ministro de Transparencia y Contraloría General de
+                            Brasil.
+                            Así mismo, expertos de la Universitá degli Studi di Salerno (Italia); y de la Asociación
+                            Española
                             de Compliance (ASCOM), entre otros.</p>
-                        <p>Además, en el marco del foro, tendremos el gusto de anunciar el lanzamiento de la Asociación Colombiana
-                            de Compliance y Transparencia, institución en la que autoridades gubernamentales y empresarios
-                            tendrán la oportunidad de integrarse a un espacio de discusión propositivo y permanente de acciones
-                            en prevención de riesgos legales e iniciativas de promoción de la transparencia y competitividad.</p>
+                        <p>Además, en el marco del foro, tendremos el gusto de anunciar el lanzamiento de la Asociación
+                            Colombiana
+                            de Compliance y Transparencia, institución en la que autoridades gubernamentales y
+                            empresarios
+                            tendrán la oportunidad de integrarse a un espacio de discusión propositivo y permanente de
+                            acciones
+                            en prevención de riesgos legales e iniciativas de promoción de la transparencia y
+                            competitividad.</p>
                     </div>
                     <div class='col-md-4'>
-                        <p class='subtitulo'><span>_</span>Se trata de un debate iberoamericano, más vigente que nunca, en
+                        <p class='subtitulo'><span>_</span>Se trata de un debate iberoamericano, más vigente que nunca,
+                            en
                             el que expertos nacionales e internacionales expondrán su perspectiva y casos de éxito. </p>
                     </div>
                 </div>
@@ -637,18 +682,26 @@
                 </div>
                 <div class="row">
                     <div class='col-md-8'>
-                        <p>Conocerá de voz de expertos nacionales e internacionales su visión alrededor del Compliance y
-                            la Transparencia en las entidades públicas, privadas y de cooperación, así como el tipo de políticas,
-                            programas, herramientas normativas y mecanismos juridicos que aseguran la transparencia y mitigan
+                        <p>Conocerá de voz de expertos nacionales e internacionales su visión alrededor del Compliance
+                            y
+                            la Transparencia en las entidades públicas, privadas y de cooperación, así como el tipo de
+                            políticas,
+                            programas, herramientas normativas y mecanismos juridicos que aseguran la transparencia y
+                            mitigan
                             los riesgos de corrupción alrededor del mundo.</p>
-                        <p>Será también una oportunidad de actualizarse en tendencias sobre riesgos reputacionales, imagen
-                            corporativa, programas de compliance, gestión anti soborno, intercambio automático de información
-                            tributaría y lucha contra la corrupción entre otros. Los participantes podrán hacer networking,
-                            sellar alianzas y descubrir posibilidades de trabajo conjunto. Finalmente podrá ser miembro fundador
+                        <p>Será también una oportunidad de actualizarse en tendencias sobre riesgos reputacionales,
+                            imagen
+                            corporativa, programas de compliance, gestión anti soborno, intercambio automático de
+                            información
+                            tributaría y lucha contra la corrupción entre otros. Los participantes podrán hacer
+                            networking,
+                            sellar alianzas y descubrir posibilidades de trabajo conjunto. Finalmente podrá ser miembro
+                            fundador
                             de la Asociación Colombiana de Compliance y Transparencia.</p>
                     </div>
                     <div class='col-md-4'>
-                        <p class='subtitulo'><span>"</span>Lanzamiento de la Asociación Colombiana de Compliance y Transparencia<span>"</span></p>
+                        <p class='subtitulo'><span>"</span>Lanzamiento de la Asociación Colombiana de Compliance y
+                            Transparencia<span>"</span></p>
                     </div>
                 </div>
             </div>
@@ -665,12 +718,18 @@
         <div class="row">
             <div class="col-lg-8 offset-lg-2">
                 <h2>Público objetivo</h2>
-                <p>Empresarios, abogados, representantes legales y administradores de empresas, líderes de departamentos
-                    legales y de contabilidad, auditores, contadores y tributaristas; responsables de tecnología, jefes de
-                    contratación de los sectores público y privado, jefes de control interno; jueces y fiscales; autoridades
-                    policiales, procuradores, contralores e investigadores y expertos en teoría de las organizaciones; oficiales
-                    y autoridades de cumplimiento, autoridades de control de datos, directivos de bancos y expertos en normas
-                    técnicas de compliance. Miembros de juntas directivas, directores de empresas, directivos financieros,
+                <p>Empresarios, abogados, representantes legales y administradores de empresas, líderes de
+                    departamentos
+                    legales y de contabilidad, auditores, contadores y tributaristas; responsables de tecnología, jefes
+                    de
+                    contratación de los sectores público y privado, jefes de control interno; jueces y fiscales;
+                    autoridades
+                    policiales, procuradores, contralores e investigadores y expertos en teoría de las organizaciones;
+                    oficiales
+                    y autoridades de cumplimiento, autoridades de control de datos, directivos de bancos y expertos en
+                    normas
+                    técnicas de compliance. Miembros de juntas directivas, directores de empresas, directivos
+                    financieros,
                     directivos de RSE, responsables de inversión, entre otros.</p>
             </div>
         </div>
@@ -681,11 +740,15 @@
         <div class="row">
             <div class="col">
                 <h3>Apoyan</h3>
-                <img class="logo-salerno" src="img/logo-salerno.png" alt="Universitá Degli Studi di Salerno">
-                <img class="logo-ascom" src="img/logo-ascom.png" alt="ASCOM">
-                <img class="logo-lanota" src="img/logo-lanota.png" alt="La Nota">
-                <span class="fila-2"><img class="logo-aviatur" src="img/logo-aviatur.png" alt="Aviatur">
-                <img class="logo-bibrand" src="img/logo-bibrand.png" alt="Bi Brand"></span>
+                <a href="https://www.unisa.it/" target="_blank"><img class="logo-salerno" src="img/logo-salerno.png"
+                        alt="Universitá Degli Studi di Salerno"></a>
+                <a href="https://www.asociacioncompliance.com/" target="_blank"><img class="logo-ascom" src="img/logo-ascom.png"
+                        alt="ASCOM"></a>
+                <a href="https://lanotaeconomica.com.co/" target="_blank"><img class="logo-lanota" src="img/logo-lanota.png"
+                        alt="La Nota"></a>
+                <a href="https://www.aviatur.com/" target="_blank"><span class="fila-2"><img class="logo-aviatur" src="img/logo-aviatur.png"
+                            alt="Aviatur"></a>
+                <a href="http://bibrand.co/" target="_blank"><img class="logo-bibrand" src="img/logo-bibrand.png" alt="Bi Brand"></span></a>
             </div>
         </div>
     </div>
@@ -693,30 +756,36 @@
     <!--Contacto-->
     <div id="contacto" class="container-fluid interna">
         <div class="row">
-            <div class='col-xl-8 offset-xl-2'>
-                <h2>Contacto.</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-xl-4 offset-xl-2">
-                <h4>MONCADA ABOGADOS</h4>
-                <p><b>Celular:</b> (+57) 300 496 6894<br>
-                    <b>Teléfono:</b> (+57-1) 322 1562<br>
-                    <b>Correo:</b> <a href="mailto:eventos@eventosmoncada.com.co">eventos@eventosmoncada.com.co</a></p>
+            <div class='col-md-8'>
+                <h2>Contacto</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>MONCADA ABOGADOS</h4>
+                        <p><b>Celular:</b> (+57) 300 496 6894<br>
+                            <b>Teléfono:</b> (+57-1) 322 1562<br>
+                            <b>Correo:</b> <a href="mailto:eventos@eventosmoncada.com.co">eventos@eventosmoncada.com.co</a></p>
 
+                    </div>
+                    <div class="col-md-6">
+                        <h4>KREAB</h4>
+                        <p><b>Celular:</b> (+57) 314 334 4278<br>
+                            <b>Teléfono:</b> (+57-1) 744 3186<br>
+                            <b>Correo:</b> <a href="mailto:acastro@kreab.com">acastro@kreab.com</a></p>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6 col-xl-4">
-                <h4>KREAB</h4>
-                <p><b>Celular:</b> (+57) 314 334 4278<br>
-                    <b>Teléfono:</b> (+57-1) 744 3186<br>
-                    <b>Correo:</b> <a href="mailto:acastro@kreab.com">acastro@kreab.com</a></p>
+            <div class='col-md-4 reservas'>
+                <h2>Reservas</h2>
+                <h4>HOTEL LAS AMÉRICAS</h4>
+                <a href="https://www.hotellasamericas.com.co/" class="btn">Más información</a>
             </div>
         </div>
+
     </div>
     <!--Fin-->
 
     <!--Modal Participantes-->
-    
+
     <!--Modal Conf 1-->
     <div id="modal-conf1" class="modal fade" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-lg" role="document">
@@ -735,19 +804,29 @@
                                 <p>Ministerio de Transparencia y Contraloría General de la Unión de Brasil</p>
                             </div>
                             <div class="col-md-6 perfil">
-                                <p>Wagner de Campos Rosario es el Ministro de la Transparencia y Contraloría General de Brasil
-                                    (CGU). Tiene formación en Ciencias Militares por la Academia de las Agujas Negras, es
-                                    Mestre en Combate a la Corrupción y Estado de Derecho por la Universidad de Salamanca,
+                                <p>Wagner de Campos Rosario es el Ministro de la Transparencia y Contraloría General de
+                                    Brasil
+                                    (CGU). Tiene formación en Ciencias Militares por la Academia de las Agujas Negras,
+                                    es
+                                    Mestre en Combate a la Corrupción y Estado de Derecho por la Universidad de
+                                    Salamanca,
                                     en España.</p>
-                                <p>El Ministro ingresó en la carrera de Auditor Federal de Financias e Control en 2009, siendo
-                                    el primer servidor de la CGU a asumir los cargos de Ministro e de Secretario Ejecutivo
-                                    del órgano. En su carrera en la CGU actúo principalmente en el área de Operaciones Especiales,
-                                    responsable por investigaciones conjuntas de combate a la corrupción, en articulación
-                                    con la Policía Federal de Brasil, el Ministerio Público y otros órganos de defensa del
+                                <p>El Ministro ingresó en la carrera de Auditor Federal de Financias e Control en 2009,
+                                    siendo
+                                    el primer servidor de la CGU a asumir los cargos de Ministro e de Secretario
+                                    Ejecutivo
+                                    del órgano. En su carrera en la CGU actúo principalmente en el área de Operaciones
+                                    Especiales,
+                                    responsable por investigaciones conjuntas de combate a la corrupción, en
+                                    articulación
+                                    con la Policía Federal de Brasil, el Ministerio Público y otros órganos de defensa
+                                    del
                                     Estado.
                                 </p>
-                                <p>Su tesis de máster se intitula: “El rol del control interno en la lucha contra la corrupción”,
-                                    con énfasis en la investigación conjunta desarrollada en el Brasil y en España, publicada
+                                <p>Su tesis de máster se intitula: “El rol del control interno en la lucha contra la
+                                    corrupción”,
+                                    con énfasis en la investigación conjunta desarrollada en el Brasil y en España,
+                                    publicada
                                     en 2016.</p>
                             </div>
                         </div>
@@ -771,18 +850,27 @@
                             <div class="col-md-6 quien">
                                 <div class="img-wrap"><img src="img/conf-ejemplo.jpg" alt=""></div>
                                 <h3>Alain Casanovas</h3>
-                                <p>Socio de KPMG España, Experto en ISO 19600 sobre Compliance Management Systems CMS e ISO
+                                <p>Socio de KPMG España, Experto en ISO 19600 sobre Compliance Management Systems CMS e
+                                    ISO
                                     37001 sobre Anti-Bribery Management Systems ABMS</p>
                             </div>
                             <div class="col-md-6 perfil">
-                                <p>Abogado Socio de KPMG Abogados (España), responsable de los servicios de Compliance. Dirige
-                                    el <i>KPMG Compliance Think Tank</i>, Secretario del Consejo en diversas organizaciones
-                                    multinacionales y asesor en el diseño e implantación de modelos de cumplimiento y prevención
-                                    penal. Es el <i>Chief Operating Officer</i> (COO) de la red de servicios legales en KPMG
-                                    a nivel mundial. Ha participado en iniciativas de normalización nacional e internacional
-                                    en materia de Compliance (ISO 19600 sobre <i>Compliance Management Systems CMS</i>, ISO
-                                    37001 sobre <i>Anti-Bribery Management Systems ABMS</i>, etc.), y formó parte del grupo
-                                    de trabajo internacional sobre <i>Compliance de la KPMG Global Legal Services Network.</i></p>
+                                <p>Abogado Socio de KPMG Abogados (España), responsable de los servicios de Compliance.
+                                    Dirige
+                                    el <i>KPMG Compliance Think Tank</i>, Secretario del Consejo en diversas
+                                    organizaciones
+                                    multinacionales y asesor en el diseño e implantación de modelos de cumplimiento y
+                                    prevención
+                                    penal. Es el <i>Chief Operating Officer</i> (COO) de la red de servicios legales en
+                                    KPMG
+                                    a nivel mundial. Ha participado en iniciativas de normalización nacional e
+                                    internacional
+                                    en materia de Compliance (ISO 19600 sobre <i>Compliance Management Systems CMS</i>,
+                                    ISO
+                                    37001 sobre <i>Anti-Bribery Management Systems ABMS</i>, etc.), y formó parte del
+                                    grupo
+                                    de trabajo internacional sobre <i>Compliance de la KPMG Global Legal Services
+                                        Network.</i></p>
                             </div>
                         </div>
                     </div>
@@ -805,25 +893,39 @@
                             <div class="col-md-6 quien">
                                 <div class="img-wrap"><img src="img/conf-ejemplo.jpg" alt=""></div>
                                 <h3>Juan Carlos Medina</h3>
-                                <p>Vicepresidente Corporativo de Cumplimiento para la Banca Internacional del Grupo Financiero
+                                <p>Vicepresidente Corporativo de Cumplimiento para la Banca Internacional del Grupo
+                                    Financiero
                                     BOD
                                 </p>
                             </div>
                             <div class="col-md-6 perfil">
-                                <p>Vicepresidente Corporativo de Cumplimiento para la Banca Internacional (Centroamérica
-                                    y el Caribe) del Grupo Financiero BOD. Presidente Ejecutivo de la Asociación de Especialistas
-                                    Certificados en Gestión de Riesgos – AECGR, México. Consultor y Expositor internacional.
-                                    Ex-Presidente del Comité de Prevención del Lavado de Activos (COPLAFT) de la Federación
-                                    Latinoamericana de Bancos (FELABAN), periodo 2014-2016. Ex-Presidente del Comité de Cumplimiento
-                                    de la Asociación de Bancos del Perú (ASBANC), periodos 2012-2016. Ex-Gerente Corporativo
-                                    de Cumplimiento de importante grupo financiero peruano. Presidente de la Asociación de
+                                <p>Vicepresidente Corporativo de Cumplimiento para la Banca Internacional
+                                    (Centroamérica
+                                    y el Caribe) del Grupo Financiero BOD. Presidente Ejecutivo de la Asociación de
+                                    Especialistas
+                                    Certificados en Gestión de Riesgos – AECGR, México. Consultor y Expositor
+                                    internacional.
+                                    Ex-Presidente del Comité de Prevención del Lavado de Activos (COPLAFT) de la
+                                    Federación
+                                    Latinoamericana de Bancos (FELABAN), periodo 2014-2016. Ex-Presidente del Comité de
+                                    Cumplimiento
+                                    de la Asociación de Bancos del Perú (ASBANC), periodos 2012-2016. Ex-Gerente
+                                    Corporativo
+                                    de Cumplimiento de importante grupo financiero peruano. Presidente de la Asociación
+                                    de
                                     Egresados de MBA de EGADE Business School – Sede Perú.</p>
-                                <p>Magister. Ingeniero Industrial. Certificación profesional (CPAML) por la Florida International
-                                    Bankers Association (FIBA) y la Florida International University (FIU). Experiencia en
-                                    banca, y en empresas de servicios, en labores de control, auditoria, planeamiento, fraudes
-                                    y riesgos; y en docencia universitaria, en áreas de gestión, proyectos, ingeniería y
-                                    finanzas. Miembro del Instituto de Auditores Internos del Perú y de la Asociación de
-                                    Especialistas Certificados en Antilavado de Dinero (ACAMS). Mentor en incubadoras de
+                                <p>Magister. Ingeniero Industrial. Certificación profesional (CPAML) por la Florida
+                                    International
+                                    Bankers Association (FIBA) y la Florida International University (FIU). Experiencia
+                                    en
+                                    banca, y en empresas de servicios, en labores de control, auditoria, planeamiento,
+                                    fraudes
+                                    y riesgos; y en docencia universitaria, en áreas de gestión, proyectos, ingeniería
+                                    y
+                                    finanzas. Miembro del Instituto de Auditores Internos del Perú y de la Asociación
+                                    de
+                                    Especialistas Certificados en Antilavado de Dinero (ACAMS). Mentor en incubadoras
+                                    de
                                     negocio en proyectos de innovación e ideas de negocio.</p>
                             </div>
                         </div>
@@ -850,10 +952,14 @@
                                 <p>Socio-director de Moncada Abogados</p>
                             </div>
                             <div class="col-md-6 perfil">
-                                <p>Abogado de la Universidad de Antioquia. Magister en derecho público de la Universidad
-                                    Externado de Colombia. Litiga ante tribunales y altas cortes. Consultor de entidades
-                                    públicas y de multinacionales privadas. Ha sido docente de pregrado y postgrado en las
-                                    Universidad de Antioquia, de Medellín, de Nariño, EAFIT y Javeriana. Árbitro de los centros
+                                <p>Abogado de la Universidad de Antioquia. Magister en derecho público de la
+                                    Universidad
+                                    Externado de Colombia. Litiga ante tribunales y altas cortes. Consultor de
+                                    entidades
+                                    públicas y de multinacionales privadas. Ha sido docente de pregrado y postgrado en
+                                    las
+                                    Universidad de Antioquia, de Medellín, de Nariño, EAFIT y Javeriana. Árbitro de los
+                                    centros
                                     de conciliación y arbitraje de las Cámaras de Comercio de Bogotá y Medellín.</p>
                             </div>
                         </div>
@@ -958,19 +1064,31 @@
                                 <p>Delegado del rector de UNISA para Latinoamérica.</p>
                             </div>
                             <div class="col-md-6 perfil">
-                                <p>Dip. di Scienze Politiche, Sociali e della Comunicazione de la Università degli Studi
+                                <p>Dip. di Scienze Politiche, Sociali e della Comunicazione de la Università degli
+                                    Studi
                                     di Salerno, Italia</p>
-                                <p>Conocedor como pocos europeos de la historia y la tradición jurídica latinoamericanas,
-                                    el profesor Scocozza tiene una larga trayectoria como profesor de la Facultad de Ciencia
-                                    Política, Social y de la Comunicación en la Università degli Studi di Salerno, Italia,
-                                    donde sus clases sobre cultura e instituciones en países de lengua española y sobre historia
-                                    e instituciones en América, le han valido inmenso prestigio. Ponente, relator y catedrático
-                                    en incontables centros académicos, foros y seminarios alrededor del mundo, es reconocido
-                                    por abordar en su larga lista de artículos y publicaciones, temas que van del derecho
-                                    a la historia política, y de la filosofía a la poesía. Entre ellos, sobresalen sus aproximaciones
-                                    al concepto de integración en América Latina, la visión constitucionalista de Simón Bolívar,
-                                    la influencia de Andrés Bello en los sistemas jurídicos latinoamericanos y su relación
-                                    con la filosofía europea, y los vínculos entre literatura y política en América Latina.</p>
+                                <p>Conocedor como pocos europeos de la historia y la tradición jurídica
+                                    latinoamericanas,
+                                    el profesor Scocozza tiene una larga trayectoria como profesor de la Facultad de
+                                    Ciencia
+                                    Política, Social y de la Comunicación en la Università degli Studi di Salerno,
+                                    Italia,
+                                    donde sus clases sobre cultura e instituciones en países de lengua española y sobre
+                                    historia
+                                    e instituciones en América, le han valido inmenso prestigio. Ponente, relator y
+                                    catedrático
+                                    en incontables centros académicos, foros y seminarios alrededor del mundo, es
+                                    reconocido
+                                    por abordar en su larga lista de artículos y publicaciones, temas que van del
+                                    derecho
+                                    a la historia política, y de la filosofía a la poesía. Entre ellos, sobresalen sus
+                                    aproximaciones
+                                    al concepto de integración en América Latina, la visión constitucionalista de Simón
+                                    Bolívar,
+                                    la influencia de Andrés Bello en los sistemas jurídicos latinoamericanos y su
+                                    relación
+                                    con la filosofía europea, y los vínculos entre literatura y política en América
+                                    Latina.</p>
                             </div>
                         </div>
                     </div>
@@ -993,7 +1111,8 @@
                             <div class="col-md-6 quien">
                                 <div class="img-wrap"><img src="img/conf-ejemplo-m.jpg" alt=""></div>
                                 <h3>Charlotte Erkhammar</h3>
-                                <p>CEO de KREAB, miembro del Consejo de la Cámara Sueco-Americana de Nueva York, Cámara Sueco-Americana
+                                <p>CEO de KREAB, miembro del Consejo de la Cámara Sueco-Americana de Nueva York, Cámara
+                                    Sueco-Americana
                                     de EE.UU. y de Stockholm International Fairs.</p>
                             </div>
                             <div class="col-md-6 perfil">
@@ -1023,11 +1142,16 @@
                                 <p>Abogada Socia en Moncada Abogados</p>
                             </div>
                             <div class="col-md-6 perfil">
-                                <p>Socia de la Firma Moncada & Barrero (Moncada Abogados). Directora del Área de Derecho
-                                    Público de la Firma durante 10 años. Abogada de la Universidad de Antioquia, Magister
-                                    en Derecho Público de la Universidad Externado de Colombia. Experiencia investigativa
-                                    y académica en asuntos de derecho constitucional y administrativo. Abogada litigante
-                                    y consultora en contratación pública y privada, en servicios públicos domiciliarios y
+                                <p>Socia de la Firma Moncada & Barrero (Moncada Abogados). Directora del Área de
+                                    Derecho
+                                    Público de la Firma durante 10 años. Abogada de la Universidad de Antioquia,
+                                    Magister
+                                    en Derecho Público de la Universidad Externado de Colombia. Experiencia
+                                    investigativa
+                                    y académica en asuntos de derecho constitucional y administrativo. Abogada
+                                    litigante
+                                    y consultora en contratación pública y privada, en servicios públicos domiciliarios
+                                    y
                                     telecomunicaciones. Ponente y autora de publicaciones especializadas.</p>
                             </div>
                         </div>
@@ -1080,12 +1204,18 @@
                                 <p>Socio Yepes Abogados</p>
                             </div>
                             <div class="col-md-6 perfil">
-                                <p>Abogado penalista. Socio de la Firma Jesús Yepes Abogados. Capacitador y litigante en
-                                    el sistema penal acusatorio. Fue fiscal delegado seccional, regional y especializado
-                                    ante diferentes tribunales en Colombia. Es abogado de la Universidad de Medellín y Especialista
-                                    en Derecho Constitucional de la Universidad Javeriana. Además cuenta con cursos y certificaciones
-                                    en técnicas penales, de juicio, de oralidad, de investigación, y en sistema acusatorio
-                                    en Colombia y Estados Unidos. Se ha desempeñado como docente universitario en las áreas
+                                <p>Abogado penalista. Socio de la Firma Jesús Yepes Abogados. Capacitador y litigante
+                                    en
+                                    el sistema penal acusatorio. Fue fiscal delegado seccional, regional y
+                                    especializado
+                                    ante diferentes tribunales en Colombia. Es abogado de la Universidad de Medellín y
+                                    Especialista
+                                    en Derecho Constitucional de la Universidad Javeriana. Además cuenta con cursos y
+                                    certificaciones
+                                    en técnicas penales, de juicio, de oralidad, de investigación, y en sistema
+                                    acusatorio
+                                    en Colombia y Estados Unidos. Se ha desempeñado como docente universitario en las
+                                    áreas
                                     de derecho penal en diferentes universidades colombianas.</p>
                             </div>
                         </div>
@@ -1112,19 +1242,28 @@
                                 <p>Socia de Legal Business Advisors – LBA</p>
                             </div>
                             <div class="col-md-6 perfil">
-                                <p>Ana Lucía Barrientos es socia de Legal Business Advisors - LBA. Su práctica profesional
+                                <p>Ana Lucía Barrientos es socia de Legal Business Advisors - LBA. Su práctica
+                                    profesional
                                     se concentra en derecho tributario, corporativo y cambiario.</p>
-                                <p>Es abogada egresada de Universidad Pontificia Bolivariana, con especializaciones en Derecho
-                                    Comercial y en Derecho Tributario de la misma universidad y Maestría en Derecho de la
-                                    Universidad de Harvard y de Derecho Internacional Comparado de la Universidad Nacional
+                                <p>Es abogada egresada de Universidad Pontificia Bolivariana, con especializaciones en
+                                    Derecho
+                                    Comercial y en Derecho Tributario de la misma universidad y Maestría en Derecho de
+                                    la
+                                    Universidad de Harvard y de Derecho Internacional Comparado de la Universidad
+                                    Nacional
                                     de Singapur. Domina el español y el inglés.</p>
-                                <p>Fue Socia de Posse, Herrera, Ruiz, entre los años 2013 y 2015, a cargo del establecimiento
+                                <p>Fue Socia de Posse, Herrera, Ruiz, entre los años 2013 y 2015, a cargo del
+                                    establecimiento
                                     de la Firma en Medellín.</p>
-                                <p>Ha sido conferenciante a nivel nacional e internacional, y catedrática en varias Universidades
-                                    en Colombia, incluidas la Universidad EAFIT, Universidad de Medellín, Universidad Autónoma
-                                    de Bucaramanga, Universidad de San Buenaventura de Cali, Universidad Pontificia Bolivariana
+                                <p>Ha sido conferenciante a nivel nacional e internacional, y catedrática en varias
+                                    Universidades
+                                    en Colombia, incluidas la Universidad EAFIT, Universidad de Medellín, Universidad
+                                    Autónoma
+                                    de Bucaramanga, Universidad de San Buenaventura de Cali, Universidad Pontificia
+                                    Bolivariana
                                     y Universidad de Manizales.</p>
-                                <p>En la actualidad es miembro de varias organizaciones y comités tributarios, así como de
+                                <p>En la actualidad es miembro de varias organizaciones y comités tributarios, así como
+                                    de
                                     juntas directivas.</p>
                             </div>
                         </div>
@@ -1148,17 +1287,25 @@
                             <div class="col-md-6 quien">
                                 <div class="img-wrap"><img src="img/conf-ejemplo.jpg" alt=""></div>
                                 <h3>Alejandro Morales Tobón</h3>
-                                <p>Miembro de Association of Certified Fraud Examiners, ACFE. Análisis de riesgos administrativos
+                                <p>Miembro de Association of Certified Fraud Examiners, ACFE. Análisis de riesgos
+                                    administrativos
                                     y de fraude, Máxima Group, Londres.</p>
                             </div>
                             <div class="col-md-6 perfil">
-                                <p>Consultor de empresas públicas y privadas en temas de fraude y corrupción. Contador Público
-                                    de la Universidad de Medellín. Experto en análisis de riesgos administrativos y de fraude,
-                                    Máxima Group, Londres. Maestría en administración de empresas, Universidad Complutense
-                                    de Madrid. Miembro de <i>Association of Certified Fraud Examiners ACFE</i>. Profesor
-                                    de programas de posgrado y especialización en temas de análisis de riesgos e investigación
-                                    de fraudes en diferentes universidades colombianas y latinoamericanas. Profesor universitario
-                                    en diferentes universidades colombianas y latinoamericanas. Columnista de El Colombiano
+                                <p>Consultor de empresas públicas y privadas en temas de fraude y corrupción. Contador
+                                    Público
+                                    de la Universidad de Medellín. Experto en análisis de riesgos administrativos y de
+                                    fraude,
+                                    Máxima Group, Londres. Maestría en administración de empresas, Universidad
+                                    Complutense
+                                    de Madrid. Miembro de <i>Association of Certified Fraud Examiners ACFE</i>.
+                                    Profesor
+                                    de programas de posgrado y especialización en temas de análisis de riesgos e
+                                    investigación
+                                    de fraudes en diferentes universidades colombianas y latinoamericanas. Profesor
+                                    universitario
+                                    en diferentes universidades colombianas y latinoamericanas. Columnista de El
+                                    Colombiano
                                     durante cinco años.</p>
                             </div>
                         </div>
@@ -1185,18 +1332,27 @@
                                 <p>Director del GECTI, profesor Universidad de Los Andes, Bogotá.</p>
                             </div>
                             <div class="col-md-6 perfil">
-                                <p>Profesor de carrera de la Universidad de Los Andes (Colombia), ha sido abogado y asesor
-                                    en diferentes entidades del sector público colombiano y en prestigiosas firmas de abogados.
-                                    Director de la Especialización en Derecho Comercial, del Gecti y del Observatorio “Ciro
+                                <p>Profesor de carrera de la Universidad de Los Andes (Colombia), ha sido abogado y
+                                    asesor
+                                    en diferentes entidades del sector público colombiano y en prestigiosas firmas de
+                                    abogados.
+                                    Director de la Especialización en Derecho Comercial, del Gecti y del Observatorio
+                                    “Ciro
                                     Angarita” sobre protección de datos personales en Colombia.</p>
-                                <p>Doctor en Ciencias Jurídicas - tesis doctoral con mención de honor grado <i>Summa Cum
+                                <p>Doctor en Ciencias Jurídicas - tesis doctoral con mención de honor grado <i>Summa
+                                        Cum
                                         Laude
-                                    </i> - de la Pontificia Universidad Javeriana (Bogotá, Colombia). Diploma de grado con
-                                    honores <i>Summa Cum Laude</i> por el excelente desempeño académico durante los estudios
+                                    </i> - de la Pontificia Universidad Javeriana (Bogotá, Colombia). Diploma de grado
+                                    con
+                                    honores <i>Summa Cum Laude</i> por el excelente desempeño académico durante los
+                                    estudios
                                     de Doctorado.</p>
-                                <p>Diploma Orden al Mérito Académico Javeriano por el sobresaliente desempeño académico durante
-                                    los estudios de Doctorado. <i>Master of Laws</i>, The London School of Economics and
-                                    Political Sciences, Londres - Inglaterra. Especialista en Derecho Comercial, Universidad
+                                <p>Diploma Orden al Mérito Académico Javeriano por el sobresaliente desempeño académico
+                                    durante
+                                    los estudios de Doctorado. <i>Master of Laws</i>, The London School of Economics
+                                    and
+                                    Political Sciences, Londres - Inglaterra. Especialista en Derecho Comercial,
+                                    Universidad
                                     de los Andes. Abogado, Universidad de los Andes.</p>
                                 <p>Autor de diferentes publicaciones científicas y especializadas.</p>
                             </div>
@@ -1224,15 +1380,24 @@
                                 <p>Profesor de la Universidad Nacional de Rosario, Argentina.</p>
                             </div>
                             <div class="col-md-6 perfil">
-                                <p>Abogado de la Universidad Nacional de Rosario, Argentina. Doctor en Derecho Constitucional
-                                    por la Universidad de Buenos Aires, Argentina. Doctor Honoris Causa por las universidades
-                                    Privada Antonio Guillermo Urelo (Cajamarca, Perú) y Nacional de Camajarca (Perú). Profesor
-                                    adjunto de Derecho Constitucional y Derechos Humanos en las Facultades de Derecho de
-                                    la Universidad Nacional de Rosario y de la Pontificia Universidad Católica de Rosario,
-                                    Argentina. Juez de la Sala Segunda de la Cámara de Apelaciones en lo Civil y Comercial
-                                    de Rosario. Autor de numerosos libros y artículos en revistas jurídicas en temas de su
-                                    especialidad, destacándose en materia de protección de datos: Hábeas data en Indoiberoamérica
-                                    (Temis, 1999); Protección de datos de carácter personal (Astrea, 2003) y Juicio de hábeas
+                                <p>Abogado de la Universidad Nacional de Rosario, Argentina. Doctor en Derecho
+                                    Constitucional
+                                    por la Universidad de Buenos Aires, Argentina. Doctor Honoris Causa por las
+                                    universidades
+                                    Privada Antonio Guillermo Urelo (Cajamarca, Perú) y Nacional de Camajarca (Perú).
+                                    Profesor
+                                    adjunto de Derecho Constitucional y Derechos Humanos en las Facultades de Derecho
+                                    de
+                                    la Universidad Nacional de Rosario y de la Pontificia Universidad Católica de
+                                    Rosario,
+                                    Argentina. Juez de la Sala Segunda de la Cámara de Apelaciones en lo Civil y
+                                    Comercial
+                                    de Rosario. Autor de numerosos libros y artículos en revistas jurídicas en temas de
+                                    su
+                                    especialidad, destacándose en materia de protección de datos: Hábeas data en
+                                    Indoiberoamérica
+                                    (Temis, 1999); Protección de datos de carácter personal (Astrea, 2003) y Juicio de
+                                    hábeas
                                     data (Hammurabi, 2016).
                                 </p>
                             </div>
@@ -1260,11 +1425,16 @@
                                 <p>Profesor Dipartimento di Scienze Politiche, Sociali e della Comunicazione, UNISDA.</p>
                             </div>
                             <div class="col-md-6 perfil">
-                                <p>Abogado de la Universidad de Salerno, Italia. Especialista en derecho comparado de la
-                                    información y la comunicación. Presidente del Consejo Académico de Ciencias de la Comunicación
-                                    y catedrático de la Universidad de Salerno. Autor de numerosos ensayos y monografías
-                                    en el campo del derecho privado, derecho comparado, derecho comunitario y derecho de
-                                    la información. Actualmente participa en el proyecto internacional de investigación “Internet
+                                <p>Abogado de la Universidad de Salerno, Italia. Especialista en derecho comparado de
+                                    la
+                                    información y la comunicación. Presidente del Consejo Académico de Ciencias de la
+                                    Comunicación
+                                    y catedrático de la Universidad de Salerno. Autor de numerosos ensayos y
+                                    monografías
+                                    en el campo del derecho privado, derecho comparado, derecho comunitario y derecho
+                                    de
+                                    la información. Actualmente participa en el proyecto internacional de investigación
+                                    “Internet
                                     en la libertad” – Organismo de financiación: Google Inc.
                                 </p>
                             </div>
@@ -1292,19 +1462,31 @@
                                 <p>Socio Moncada Abogados</p>
                             </div>
                             <div class="col-md-6 perfil">
-                                <p>Abogado de la Facultad de Derecho de la Universidad Autónoma de Colombia. Especialista
-                                    en Derecho Procesal en la Universidad Libre. Asesor en procesos de liquidación de entidades
+                                <p>Abogado de la Facultad de Derecho de la Universidad Autónoma de Colombia.
+                                    Especialista
+                                    en Derecho Procesal en la Universidad Libre. Asesor en procesos de liquidación de
+                                    entidades
                                     privadas y públicas durante 30 años.</p>
-                                <p>Árbitro en más 30 tribunales de arbitramento instalados en la Cámara de Comercio de Bogotá
-                                    desde el año 2001. Decano de la facultades de derecho de las Universidades Manuela Beltrán
-                                    y Autónoma de Colombia y docente de pregrado y postgrado de derecho comercial, títulos
-                                    valores, sociedades, procesos concursales, bienes, obligaciones y práctica forense civil
-                                    y comercial en representativas universidades como la Universidad Autónoma de Colombia,
-                                    INCCA, Libre de Colombia, Jorge Tadeo Lozano, San Martín, Grancolombia, Santo Tomás,
-                                    y Sergio Arboleda. Autor de varias publicaciones entre ellas “Manual de Procedimientos
-                                    Concursales”, “Manual para el establecimiento de sociedades” y “Reestructuración Empresarial.
-                                    Ley 550 de 1999” publicados por la Editorial Librería Ediciones del Profesional Ltda.</p>
-                                <p>Abogado litigante ante la Sala Civil de la Corte Suprema de Justicia en representativos
+                                <p>Árbitro en más 30 tribunales de arbitramento instalados en la Cámara de Comercio de
+                                    Bogotá
+                                    desde el año 2001. Decano de la facultades de derecho de las Universidades Manuela
+                                    Beltrán
+                                    y Autónoma de Colombia y docente de pregrado y postgrado de derecho comercial,
+                                    títulos
+                                    valores, sociedades, procesos concursales, bienes, obligaciones y práctica forense
+                                    civil
+                                    y comercial en representativas universidades como la Universidad Autónoma de
+                                    Colombia,
+                                    INCCA, Libre de Colombia, Jorge Tadeo Lozano, San Martín, Grancolombia, Santo
+                                    Tomás,
+                                    y Sergio Arboleda. Autor de varias publicaciones entre ellas “Manual de
+                                    Procedimientos
+                                    Concursales”, “Manual para el establecimiento de sociedades” y “Reestructuración
+                                    Empresarial.
+                                    Ley 550 de 1999” publicados por la Editorial Librería Ediciones del Profesional
+                                    Ltda.</p>
+                                <p>Abogado litigante ante la Sala Civil de la Corte Suprema de Justicia en
+                                    representativos
                                     procesos. Conjuez del Consejo Superior de la Judicatura.</p>
                             </div>
                         </div>
