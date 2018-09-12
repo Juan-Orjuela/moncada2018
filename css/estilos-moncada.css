@@ -206,14 +206,20 @@ img {
     right: -15px;
     position: relative;
 }
+
 .intro .btn {
     font-size: 1rem;
     margin-left: 0;
     margin-top: 3rem;
 }
+
 .intro .btn:hover {
     color: #ffffff;
     background: #ee6324;
+}
+.intro .col-lg-5 {
+    padding-top: 4vh;
+    padding-bottom: 4vh;
 }
 /*Carrusel*/
 .slider-mc {
@@ -1187,21 +1193,25 @@ Contacto
         position: relative;
         margin-top: -20%;
     }
-#apoyos {
-    padding-top: 90px;
-    padding-bottom: 90px;}
+
+    #apoyos {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
     #apoyos [class*='logo'] {
         margin-left: 15%;
         align-self: top;
     }
+
     #apoyos .logo-bibrand {
         margin-top: 3rem;
     }
+
     #apoyos .fila-2 {
         margin-left: -15%;
         display: block;
     }
-    
 }
 
 @media (max-width: 768px) {
@@ -1215,11 +1225,13 @@ Contacto
     .intro .row {
         padding-bottom: 60px;
     }
+
     .black-footer {
         width: 100%;
         float: initial;
         margin-left: 0!important;
     }
+
     .black-footer:before {
         display: none!important;
     }
@@ -1229,16 +1241,20 @@ Contacto
         margin: 30px 0 10px -8%;
         text-align: center!important;
     }
+
     #organizadores {
         text-align: center;
     }
+
     #organizadores .col-md-6:last-child {
-        margin-top:  5rem;
+        margin-top: 5rem;
     }
+
     #apoyos .fila-2 {
         margin-left: 0;
         display: initial;
     }
+
     #apoyos [class*='logo'] {
         margin-left: 0;
         align-self: initial;
@@ -1248,10 +1264,10 @@ Contacto
         left: 50%;
         transform: translateX(-50%);
     }
+
     #apoyos .logo-bibrand {
         margin-bottom: 0;
     }
-    
 }
 
 @media (max-width: 576px) {
@@ -1259,9 +1275,10 @@ Contacto
         font-size: 14px;
     }
 
-    h1 {
-        font-size: 4rem;
+    .intro h1 {
+        font-size: 2.3rem;
     }
+
     #organizadores .logo-moncada {
         width: calc(143px * 0.6);
     }
@@ -1279,6 +1296,31 @@ Contacto
         width: calc(145px * 0.5);
         margin-left: 11%;
     }
+
+    /*Margenes espaciales*/
+    .container-fluid {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .navbar {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    /*Internas*/
+    .img-out.izq {
+        -ms-flex: 0 0 calc(100% - 20px);
+        flex: 0 0 calc(100% - 20px);
+        max-width: calc(100% - 20px);
+        margin-left: -20px;
+    }
+    .img-out.der {
+        -ms-flex: 0 0 calc(100% - 20px);
+        flex: 0 0 calc(100% - 20px);
+        max-width: calc(100% - 20px);
+        margin-right: 0!important;
+        right: -40px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -1292,6 +1334,7 @@ Contacto
         padding-right: .7rem;
         padding-left: .7rem;
     }
+
     .redes-mobile {
         display: none;
     }
