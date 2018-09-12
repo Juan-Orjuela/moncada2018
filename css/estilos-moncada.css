@@ -78,7 +78,7 @@ img {
 }
 
 .navbar-brand img {
-    max-width: 200px;
+    max-width: 170px;
 }
 
 .redes a:first-child {
@@ -99,8 +99,8 @@ img {
     background-position: center;
     background-size: 100%;
     border-radius: 8px;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     text-align: center;
     color: transparent!important;
     padding: 8px!important;
@@ -142,7 +142,7 @@ img {
 .intro h3 {
     color: #a7a7a7;
     font-size: 2rem;
-    margin: 4.5vh 0 9vh;
+    margin: 4.5vh 0 6vh;
     font-family: 'Gotham-Bold';
 }
 
@@ -160,11 +160,14 @@ img {
 }
 
 .intro .black-footer {
-    padding: 25px 0 25px 30px;
-    background: #000000;
-    color: #ffffff;
+    padding: 10px 0 10px 30px;
+    background: #d8d6d6;
+    color: #4a4a4a;
     position: relative;
     margin-left: -15px;
+    font-size: .8rem;
+    letter-spacing: 0.1em;
+    line-height: 3.1
 }
 
 .intro .black-footer::before {
@@ -175,7 +178,7 @@ img {
     bottom: 0;
     right: 100%;
     left: -110px;
-    background: #000000;
+    background: #ed6423;
 }
 
 .intro .black-footer span {
@@ -197,10 +200,10 @@ img {
 }
 
 .intro > .row:first-child {
-    min-height: calc(100vh - 233px);
+    min-height: calc(100vh - 196px);
 }
 
-.creditos img {
+.comp-2017 img {
     width: 100%;
     max-width: 280px;
     right: -15px;
@@ -210,17 +213,27 @@ img {
 .intro .btn {
     font-size: 1rem;
     margin-left: 0;
-    margin-top: 3rem;
 }
 
 .intro .btn:hover {
     color: #ffffff;
     background: #ee6324;
 }
-.intro .col-lg-5 {
+
+.intro .col-lg-5.txt-intro {
     padding-top: 4vh;
     padding-bottom: 4vh;
 }
+
+.intro .intro-org {
+    font-size: .8rem;
+    margin-top: 4vh;
+}
+
+.intro .intro-org + img {
+    width: 190px;
+}
+
 /*Carrusel*/
 .slider-mc {
     position: relative;
@@ -252,7 +265,7 @@ img {
     position: absolute;
     z-index: 10;
     font-family: 'Gotham-Bold';
-    font-size: 3em;
+    font-size: 2em;
     line-height: 1.6;
     top: 26px;
     left: 32px;
@@ -312,7 +325,9 @@ a.foros {
 
 /*Formulario*/
 #inscripcion.formulario {
-    background: #eaeaea;
+    background: #eaeaea url(../img/fondo-edificios.jpg) no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed;
     padding-top: 90px;
     padding-bottom: 60px;
 }
@@ -441,6 +456,21 @@ form.formulario {
     font-size: .8rem;
 }
 
+#inscripcion .text-puntos {
+    position: realtive;
+}
+
+#inscripcion .text-puntos::after {
+    content: '';
+    width: 130px;
+    height: 21px;
+    position: absolute;
+    top: 42%;
+    right: 0;
+    background: url(../img/textura-puntos@2x.png) no-repeat left top;
+    background-size: 100%;
+}
+
 /*
 ===============
 Conferencistas
@@ -556,7 +586,7 @@ Conferencistas
 }
 
 .modal-body .img-wrap {
-    box-shadow: 0 0 0 10px #ed6423;
+    box-shadow: 0 0 0 20px #ed6423;
     position: relative;
 }
 
@@ -568,8 +598,8 @@ Conferencistas
     content: '';
     display: block;
     position: absolute;
-    height: 30px;
-    width: 90px;
+    height: 20px;
+    width: 55%;
     background: #991d38;
     left: -20px;
     bottom: -20px;
@@ -588,8 +618,8 @@ Conferencistas
 
 .modal-body .quien {
     margin-top: -4.4rem;
-    padding-right: 10%;
-    padding-left: 5%;
+    padding-right: 60px;
+    padding-left: 15px;
 }
 
 .modal-header {
@@ -597,11 +627,30 @@ Conferencistas
 }
 
 .modal-body .quien p {
-    margin-top: 1.8rem;
+    margin-top: 1.1rem;
+    font-size: .9rem;
+    text-transform: uppercase
+}
+
+.modal-body .quien {
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.modal-body .quien::after {
+    content: '';
+    width: 130px;
+    height: 21px;
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    background: url(../img/textura-puntos@2x.png) no-repeat left top;
+    background-size: 100%;
 }
 
 .modal-body .perfil {
-    padding-top: 4rem;
+    padding-top: 3.4rem;
+    font-size: .9rem;
 }
 
 /*
@@ -647,7 +696,7 @@ Organizadores
     font-size: 1.6rem;
     font-family: 'Gotham-Bold';
     color: #ed6423;
-    display: inline-block;
+    margin-bottom: 2rem;
 }
 
 #organizadores h3:after {
@@ -656,31 +705,30 @@ Organizadores
 }
 
 #organizadores {
-    background: #fff;
+    background: #fff url(../img/fondo-cel.jpg) no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed;
     padding-top: 160px;
     padding-bottom: 160px;
-    border-top: 20px solid #eb6223;
-    text-align: center;
+    text-align: left;
 }
 
 #organizadores .logo-moncada {
-    width: 143px;
+    width: calc(143px * 0.8);
 }
 
 #organizadores .logo-kreab {
-    width: 139px;
+    width: calc(139px * 0.9);
+    margin-left: 11%;
 }
 
 #organizadores .logo-unad {
-    width: 185px;
+    width: calc(185px * 0.75);
 }
 
 #organizadores .logo-tmf {
-    width: 145px;
-}
-
-#organizadores [class*='logo'] {
-    margin-left: 11%;
+    width: calc(145px * 0.7);
+    margin-left: 0;
 }
 
 /*
@@ -732,12 +780,12 @@ Foros
     background: #ed6423;
 }
 
-.img-wrap.izq:after {
+.izq .img-wrap:after {
     left: 0;
     right: initial;
 }
 
-.img-wrap.der:after {
+.der .img-wrap:after {
     right: 0;
     left: initial;
 }
@@ -757,7 +805,9 @@ Participar
 ===============
 */
 #participar {
-    background: #fff;
+    background: #fff url(../img/fondo-escritorio.jpg) no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 /*
@@ -804,24 +854,25 @@ Apoyos
 }
 
 #apoyos .logo-salerno {
-    width: 142px;
-}
+        width: calc(142px * 0.7);
+        
+    }
 
-#apoyos .logo-ascom {
-    width: 225px;
-}
+    #apoyos .logo-ascom {
+        width: calc(225px * 0.7);
+    }
 
-#apoyos .logo-lanota {
-    width: 232px;
-}
+    #apoyos .logo-lanota {
+        width: calc(232px * 0.7);
+    }
 
-#apoyos .logo-aviatur {
-    width: 252px;
-}
+    #apoyos .logo-aviatur {
+        width: calc(252px * 0.7);
+    }
 
-#apoyos .logo-bibrand {
-    width: 112px;
-}
+    #apoyos .logo-bibrand {
+        width: calc(112px * 0.7);
+    }
 
 /*
 ===============
@@ -844,7 +895,21 @@ Contacto
 #contacto a:hover {
     color: #ed6423;
 }
+#contacto .reservas .btn {
+    color: #ffff;
+    font-size: 1rem;
+    font-family: 'Gotham-Medium';
+    margin-left: 0;
+    background: #ed6423;
+    margin-top: 1.6rem;
+    -webkit-transition: opacity 200ms;
+    -moz-transition: opacity 200ms;
+    transition: opacity 200ms;
 
+}
+#contacto .reservas .btn:hover {
+    opacity: .9;
+}
 /*Formulario*/
 /*Responsive*/
 @media screen and (max-width: 1600px) {
@@ -881,7 +946,7 @@ Contacto
 
     #organizadores .logo-tmf {
         width: calc(145px * 0.7);
-        margin-left: 11%;
+        margin-left: 0;
     }
 
     #apoyos .logo-salerno {
@@ -959,7 +1024,7 @@ Contacto
     }
 
     .slider-mc h2 {
-        font-size: 2.2em;
+        font-size: 1.8em;
         line-height: 1.6;
     }
 
@@ -984,7 +1049,25 @@ Contacto
         padding: .1rem;
     }
 }
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    #organizadores .logo-moncada {
+        width: calc(143px * 0.7);
+    }
 
+    #organizadores .logo-kreab {
+        width: calc(139px * 0.8);
+        margin-left: 11%;
+    }
+
+    #organizadores .logo-unad {
+        width: calc(185px * 0.65);
+    }
+
+    #organizadores .logo-tmf {
+        width: calc(145px * 0.6);
+        margin-left: 0;
+    }
+}
 @media screen and (max-width: 1300px) {
     .slider-mc::before {
         top: -20px;
@@ -1017,7 +1100,7 @@ Contacto
     }
 
     .slider-mc h2 {
-        font-size: 2em;
+        font-size: 1.4em;
         line-height: 1.6;
     }
 
@@ -1030,7 +1113,7 @@ Contacto
         left: 0;
         right: 0;
     }
-
+    
     #apoyos .logo-salerno {
         width: calc(142px * 0.6);
         margin-left: 0!important;
@@ -1055,6 +1138,7 @@ Contacto
     #apoyos [class*='logo'] {
         margin-left: 6%;
     }
+    
 }
 
 @media (max-width: 992px) {
@@ -1147,7 +1231,7 @@ Contacto
         float: left;
     }
 
-    .creditos {
+    .comp-2017 {
         width: 40%;
         margin-top: 15px;
     }
@@ -1170,7 +1254,9 @@ Contacto
         max-width: calc(100% + 50px);
         margin-right: -50px;
     }
-
+    #organizadores .org {
+        margin-bottom: 4rem;
+    }
     #foro .img-wrap {
         margin-bottom: 6rem;
         max-height: 60vh;
@@ -1193,7 +1279,7 @@ Contacto
         position: relative;
         margin-top: -20%;
     }
-
+    
     #apoyos {
         padding-top: 90px;
         padding-bottom: 90px;
@@ -1211,6 +1297,12 @@ Contacto
     #apoyos .fila-2 {
         margin-left: -15%;
         display: block;
+    }
+    #contacto .reservas {
+        margin-top: 3rem;
+    }
+    #contacto h2 {
+        margin-bottom: 40px;
     }
 }
 
@@ -1236,7 +1328,7 @@ Contacto
         display: none!important;
     }
 
-    .creditos {
+    .comp-2017 {
         width: 100%;
         margin: 30px 0 10px -8%;
         text-align: center!important;
@@ -1279,37 +1371,24 @@ Contacto
         font-size: 2.3rem;
     }
 
-    #organizadores .logo-moncada {
-        width: calc(143px * 0.6);
-    }
-
-    #organizadores .logo-kreab {
-        width: calc(139px * 0.7);
-        margin-left: 11%;
-    }
-
-    #organizadores .logo-unad {
-        width: calc(185px * 0.55);
-    }
-
-    #organizadores .logo-tmf {
-        width: calc(145px * 0.5);
-        margin-left: 11%;
-    }
+    
 
     /*Margenes espaciales*/
     .container-fluid {
         padding-left: 20px;
         padding-right: 20px;
     }
-#conferencistas.container-fluid .row:last-child {
+
+    #conferencistas.container-fluid .row:last-child {
         padding-left: 20px;
         padding-right: 20px;
     }
+
     .navbar {
         padding-left: 20px;
         padding-right: 20px;
     }
+
     /*Internas*/
     .img-out.izq {
         -ms-flex: 0 0 calc(100% - 20px);
@@ -1317,6 +1396,7 @@ Contacto
         max-width: calc(100% - 20px);
         margin-left: -20px;
     }
+
     .img-out.der {
         -ms-flex: 0 0 calc(100% - 20px);
         flex: 0 0 calc(100% - 20px);
