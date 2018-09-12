@@ -1302,7 +1302,10 @@ Contacto
         padding-left: 20px;
         padding-right: 20px;
     }
-
+#conferencistas.container-fluid .row:last-child {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     .navbar {
         padding-left: 20px;
         padding-right: 20px;
